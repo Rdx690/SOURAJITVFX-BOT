@@ -1,5 +1,5 @@
 // ============================================
-// 🕐 MISHU-MD MINI - RUNTIME WITH BUTTONS
+// 🕐 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - RUNTIME WITH BUTTONS
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 🔥 EXACT SAME STYLE AS MENU
 // 💖 Interactive Buttons + Single Select
@@ -54,7 +54,7 @@ mishu({
         const totalCommands = commands ? commands.length : 0;
         const uptime = formatUptime(process.uptime());
         const memory = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2);
-        const botName = config.BOT_NAME || "💕⃝🕊️ 𝗠𝗶𝘀𝗵𝘂 𝗠𝗗 💕⃝🕊️";
+        const botName = config.BOT_NAME || "𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗";
         const ownerName = config.OWNER_NAME || "ᴹᴿAʀꜱʟᴀɴ-ᴍD ";
         const prefix = config.PREFIX || ".";
         const pushName = pushname || 'User';
@@ -65,7 +65,7 @@ mishu({
         // ── Build Text ─────────────────────────────────────────
         const text = `
 ╭────────────────────◇
-│ 💕⃝🕊️ 𝗠𝗶𝘀𝗵𝘂 𝗠𝗗 𝗠𝗶𝗻𝗶 💕⃝🕊️
+│ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 │  ㋡━━━━━━━━━━━━━━━㋡
 │ ❦ 👤 User: ${pushName}
 │ ❦ 👑 Owner: ${ownerName}
@@ -88,7 +88,7 @@ mishu({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363348739987203@newsletter',
-                newsletterName: '🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙࿐',
+                newsletterName: '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐',
                 serverMessageId: 143
             }
         };
@@ -235,11 +235,11 @@ mishu({
         try {
             const uptime = formatUptime(process.uptime());
             const pakTime = moment().tz('Asia/Karachi').format('hh:mm:ss A');
-            const botName = config.BOT_NAME || "🌸 MISHU-MD 🌸";
+            const botName = config.BOT_NAME || "🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸";
             
             const fallbackText = `
 ╭────────────────────◇
-│ 💕⃝🕊️ 𝗠𝗶𝘀𝗵𝘂 𝗠𝗗 𝗠𝗶𝗻𝗶 💕⃝🕊️
+│ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 │  ㋡━━━━━━━━━━━━━━━㋡
 │  ✿ ⏳ Uptime: ${uptime}
 │  ✿ 🕰️ Time: ${pakTime}
@@ -247,7 +247,7 @@ mishu({
 │  ✿ 📌 Prefix: ${config.PREFIX || '.'}
 ╰────────────────────○
 
-> 🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
             await reply(fallbackText);
         } catch (fallbackError) {
             await reply(`🕐 Error loading runtime: ${error.message} 💕`);
@@ -255,4 +255,4 @@ mishu({
     }
 });
 
-console.log('🕐 MISHU-MD MINI - Runtime with Gifted Buttons Loaded! 💖');
+console.log('🕐 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - Runtime with Gifted Buttons Loaded! 💖');

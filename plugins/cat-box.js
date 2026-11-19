@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 CATBOX UPLOADER - MISHU QUEEN
+// 🌸 CATBOX UPLOADER - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 🔥 Upload media to Catbox.moe
 // ============================================
@@ -32,7 +32,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
 }
 
 // ============================================
@@ -63,7 +63,7 @@ mishu({
                 ['📌', 'With Name', '.upload filename.jpg'],
                 ['💖', 'Supports', 'Images, Videos, Audio, Documents'],
                 ['📤', 'Host', 'catbox.moe'],
-                ['👑', 'By', 'Mishu Queen']
+                ['👑', 'By', '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗']
             ]));
         }
 
@@ -187,7 +187,7 @@ mishu({
 
             await sendInteractiveMessage(mishu, from, {
                 text: caption,
-                footer: `💖 ${config.BOT_NAME || 'MISHU QUEEN'}`,
+                footer: `💖 ${config.BOT_NAME || '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗'}`,
                 interactiveButtons: [
                     {
                         name: 'cta_copy',
@@ -326,7 +326,7 @@ mishu({
                 ['🔗', 'URL', uploadUrl],
                 ['📤', 'Host', data.provider || 'catbox.moe']
             ]),
-            footer: `💖 ${config.BOT_NAME || 'MISHU QUEEN'}`,
+            footer: `💖 ${config.BOT_NAME || '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗'}`,
             interactiveButtons: [
                 {
                     name: 'cta_copy',

@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 ANTI-DELETE DATA HANDLER - MISHU QUEEN
+// 🌸 ANTI-DELETE DATA HANDLER - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // ============================================
 

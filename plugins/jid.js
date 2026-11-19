@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 JID - MISHU QUEEN
+// 🌸 JID - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // ============================================
@@ -31,4 +31,4 @@ mishu({
     }
 });
 
-console.log('🌸 MISHU QUEEN - JID plugin loaded! 💖');
+console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - JID plugin loaded! 💖');

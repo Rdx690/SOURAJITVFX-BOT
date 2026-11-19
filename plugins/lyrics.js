@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 LYRICS - MISHU QUEEN
+// 🌸 LYRICS - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 📌 Category: Music
@@ -93,7 +93,7 @@ async (mishu, mek, m, { from, reply, text }) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '🌸 MISHU QUEEN 🌸',
+                        newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
                 }
@@ -107,7 +107,7 @@ async (mishu, mek, m, { from, reply, text }) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '🌸 MISHU QUEEN 🌸',
+                        newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
                 }
@@ -179,7 +179,7 @@ async (mishu, mek, m, { from, reply, text }) => {
 
 📝 ${lyricsOutput}
 
-💖 Powered by MISHU QUEEN
+💖 Powered by 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
         `.trim();
 
         if (image) {
@@ -245,7 +245,7 @@ ${lyrics}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💖 Powered by MISHU QUEEN
+💖 Powered by 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
         `.trim();
 
@@ -256,7 +256,7 @@ ${lyrics}
 │  ✿ 🎵 ${title || 'Unknown Song'}
 │  ✿ 👩‍🎤 ${artist || 'Unknown Artist'}
 │  ✿ 📄 Saved as document
-│  ✿ 👑 By Mishu Queen
+│  ✿ 👑 By 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 ╰═══✿══════════════╝
 
 🌸 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗠𝗜𝗦𝗛𝗨 𝗤𝗨𝗘𝗘𝗡 💖
@@ -272,7 +272,7 @@ ${lyrics}
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: '🌸 MISHU QUEEN 🌸',
+                    newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }
             }

@@ -1,10 +1,10 @@
 const { mishu } = require("../mishu");
 const config = require('../config');
 
-// Mishu style formatter
+// 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 style formatter
 function mishuStyle(title, value, status) {
     return `
-*╭─────💕⃝🕊️ 𝗠𝗶𝘀𝗵𝘂 𝗠𝗗 💕⃝🕊️──────◇*
+*╭─────𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗──────◇*
 *│❀ 🎮 ${title}:* ${value}
 *│❀ ⚙️ 𝐒𝐭𝐚𝐭𝐮𝐬:* ${status}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*

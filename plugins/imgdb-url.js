@@ -185,7 +185,7 @@ mishu({
         captionText += `📁 *File:* ${fileName}\n`;
         captionText += `📦 *Size:* ${formatBytes(result.size || 0)}\n`;
         captionText += `🔗 *URL:* ${resultUrl}\n\n`;
-        captionText += `> *© Uploaded by MISHU-MD 🍸*`;
+        captionText += `> *© Uploaded by 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🍸*`;
 
         // ── Send with buttons ──
         await sendButtons(client, from, {

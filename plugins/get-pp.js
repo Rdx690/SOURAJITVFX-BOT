@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 GET PP - MISHU QUEEN (FIXED)
+// 🌸 GET PP - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 (FIXED)
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 🔥 Reply System Working
@@ -137,7 +137,7 @@ ${displayNumber ? `│  ✿ 📱 *Number:* ${displayNumber}` : ''}
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: '🌸 MISHU QUEEN 🌸',
+                    newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }
             }
@@ -281,7 +281,7 @@ async (mishu, mek, m, { from, reply, text, sender, isOwner, isCreator, isReply, 
 │  ✿━━━━━━━━━━━━━━━✿
 │  ✿ 💾 Saved to gallery
 │  ✿ 👤 ${displayName}
-│  ✿ 👑 By Mishu Queen
+│  ✿ 👑 By 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 ╰═══✿══════════════╝
 
 🌸 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗠𝗜𝗦𝗛𝗨 𝗤𝗨𝗘𝗘𝗡 💖`;

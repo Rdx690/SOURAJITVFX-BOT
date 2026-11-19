@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 MISHU QUEEN - VIDEO DOWNLOADER
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - VIDEO DOWNLOADER
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 📌 Multi-API video downloader with trim support
@@ -36,7 +36,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
 `;
 }
 
@@ -361,4 +361,4 @@ mishu({
     }
 });
 
-console.log('🌸 MISHU QUEEN - Video plugin loaded! 💖');
+console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - Video plugin loaded! 💖');

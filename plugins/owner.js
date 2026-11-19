@@ -1,5 +1,5 @@
 // ============================================
-// 👑 OWNER - MISHU QUEEN
+// 👑 OWNER - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 📌 Owner info + Developer commands
@@ -20,9 +20,9 @@ const DEV_INFO = {
     number: "923237045919",
     channel: "https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306",
     group: "https://chat.whatsapp.com/KCGPeSBdN4d0E7qfQptONd",
-    github: "https://github.com/Arslan-MD",
+    github: "https://github.com/Rdx690/SOURAJITVFX-BOT",
     website: "https://arslanmd.xo.je",
-    repo: "https://github.com/Arslan-MD/Mishu-MD"
+    repo: "https://github.com/Rdx690/SOURAJITVFX-BOT"
 };
 
 // ============================================
@@ -38,7 +38,7 @@ mishu({
 }, async (mishu, mek, m, { from, reply }) => {
     try {
         const uptime = runtime(process.uptime());
-        const botName = config.BOT_NAME || "🌸 MISHU-MD 🌸";
+        const botName = config.BOT_NAME || "🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸";
 
         const text = `
 ╭═══✿══════════════╗

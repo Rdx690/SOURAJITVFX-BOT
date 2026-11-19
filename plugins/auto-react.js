@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 AUTO REACT - MISHU QUEEN
+// 🌸 AUTO REACT - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // ============================================
@@ -20,7 +20,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
 `;
 }
 
@@ -108,4 +108,4 @@ mishu({
     }
 });
 
-console.log('🌸 MISHU QUEEN - Auto React plugin loaded! 💖');
+console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - Auto React plugin loaded! 💖');

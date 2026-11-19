@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 GROUP STATUS - MISHU QUEEN
+// 🌸 GROUP STATUS - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 🔥 Post status updates to group story
 // ============================================
@@ -41,7 +41,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
 }
 
 // ============================================
@@ -215,7 +215,7 @@ mishu({
                     ['📌', 'Reply to media', '.groupstatus [caption]'],
                     ['📌', 'Text status', '.groupstatus Your text here'],
                     ['💖', 'Supported', 'Image, Video, Audio, Sticker'],
-                    ['👑', 'By', 'Mishu Queen']
+                    ['👑', 'By', '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗']
                 ]));
             }
 

@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 MISHU QUEEN - MOVIE DOWNLOADER (API BASED)
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - MOVIE DOWNLOADER (API BASED)
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 🔧 NO PUPPETEER - Uses simple API
@@ -185,7 +185,7 @@ async (mishu, mek, m, { from, reply, text, pushname }) => {
 │  ✿ 🎬 ${selectedMovie.title.substring(0, 40)}
 │  ✿ 💾 ${fileSize} MB
 │  ✿ 📄 Sent as Document
-│  ✿ 👑 By MISHU QUEEN
+│  ✿ 👑 By 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 ╰═══✿══════════════╝
 
 🌸 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗠𝗜𝗦𝗛𝗨 𝗤𝗨𝗘𝗘𝗡 💖`;
@@ -201,7 +201,7 @@ async (mishu, mek, m, { from, reply, text, pushname }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: '🌸 MISHU QUEEN 🌸',
+                    newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }
             }
@@ -220,4 +220,4 @@ async (mishu, mek, m, { from, reply, text, pushname }) => {
     }
 });
 
-console.log('🌸 MISHU QUEEN - Movie Downloader (API Based) loaded! 💖');
+console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - Movie Downloader (API Based) loaded! 💖');

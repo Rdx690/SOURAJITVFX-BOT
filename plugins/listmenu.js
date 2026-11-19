@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 MISHU QUEEN - LIST MENU WITH QUICK REPLY
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - LIST MENU WITH QUICK REPLY
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 📌 Using Gifted-btns quick_reply buttons
@@ -24,7 +24,7 @@ async (mishu, mek, m, { from, reply, pushname }) => {
 │  ✿ 🌸 𝗠𝗜𝗦𝗛𝗨 𝗤𝗨𝗘𝗘𝗡 🌸 ✿
 │  ✿━━━━━━━━━━━━━━━✿
 │  ✿ 👋 Hello ${pushname || 'Princess'}! 👸
-│  ✿ 💖 Welcome to Mishu Queen
+│  ✿ 💖 Welcome to 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 │  ✿ 🎀 Click a button below to explore
 ╰═══✿══════════════╝
 
@@ -33,7 +33,7 @@ async (mishu, mek, m, { from, reply, pushname }) => {
 
         // 🔥 SEND BUTTONS WITH QUICK REPLY
         await sendButtons(mishu, from, {
-            title: "🌸 MISHU QUEEN MENU 🌸",
+            title: "🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MENU 🌸",
             text: welcomeText,
             footer: "💖 Tap a button to explore commands",
             image: {

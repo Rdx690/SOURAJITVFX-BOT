@@ -6,11 +6,11 @@
 // ██║  ██║██║  ██║███████║███████╗██║  ██║██║  ████║     ██║ ╚═╝ ██║██████╔╝
 // ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═══╝    ╚═╝     ╚═╝╚═════╝ 
 // ═══════════════════════════════════════════════════════════════════════════
-//                    ARSLAN MD - BOT CONFIGURATION
+//                    𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - BOT CONFIGURATION
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ============================================
-// 🔥 MISHU-MD MINI - COMPLETE SETTINGS
+// 🔥 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - COMPLETE SETTINGS
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 🔥 GitHub Session System + All Features
 // ============================================
@@ -104,7 +104,7 @@ module.exports = {
      * @description Display name of the bot
      * @type {string}
      */
-    BOT_NAME: process.env.BOT_NAME || 'SOURAJITVFX',
+    BOT_NAME: process.env.BOT_NAME || '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
 
     /**
      * @description Owner name
@@ -124,7 +124,7 @@ module.exports = {
      * @description Bot footer text
      * @type {string}
      */
-    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY SOURAJIT SARKAR',
+    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
 
  // ============================================
     // 📵 ANTI-CALL SETTINGS
@@ -442,7 +442,7 @@ module.exports = {
 
 /**
  * @module settings
- * @description MISHU-MD MINI Configuration Module
+ * @description 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI Configuration Module
  * @version 2.0.0
  * @author ᴀʀꜱʟᴀɴ-ᴍᴅ
  * @license MIT

@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 VIEW ONCE PLUGIN - MISHU QUEEN (FINAL)
+// 🌸 VIEW ONCE PLUGIN - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 (FINAL)
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 🔥 Fixed: Unsupported media type error
 // ============================================
@@ -171,7 +171,7 @@ async function handleViewOnce(client, mek, m, context) {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '🌸 MISHU QUEEN 🌸',
+                        newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
                 }
@@ -186,7 +186,7 @@ async function handleViewOnce(client, mek, m, context) {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '🌸 MISHU QUEEN 🌸',
+                        newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
                 }
@@ -484,4 +484,4 @@ mishu({
   }
 });
 
-console.log('🌸 MISHU QUEEN - View Once plugin loaded! 💖');
+console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - View Once plugin loaded! 💖');

@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 MISHU QUEEN - BOT COMMANDS
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - BOT COMMANDS
 // 👑 Settings + Group Management
 // 💖 Girl Power Mode: ON
 // ============================================
@@ -362,9 +362,9 @@ mishu({
 ╰────────────────────○
 
 🌸 *To change: .<command> on/off*
-> 🦋⃟ 𝙈𝙄𝙎𝙃𝙐 𝙌𝙐𝙀𝙀𝙉 𝙈𝙄𝙉𝙄 🦋⃟‌💙࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
 
     return reply(list);
 });
 
-console.log('🌸 MISHU QUEEN - Bot Commands Loaded! 💖');
+console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - Bot Commands Loaded! 💖');

@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 MISHU QUEEN - POLL COMMAND
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - POLL COMMAND
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 💖 Girl Power Mode: ON
 // 📌 Converted from your friend's bot

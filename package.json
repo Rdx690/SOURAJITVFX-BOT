@@ -1,7 +1,7 @@
 {
   "name": "sourajitvfx-bot",
   "version": "2.0.0",
-  "description": "SOURAJITVFX WhatsApp bot",
+  "description": "𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 WhatsApp bot",
   "main": "index.js",
   "engines": {
     "node": "20.x"

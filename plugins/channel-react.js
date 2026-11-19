@@ -1,5 +1,5 @@
 // ============================================
-// 🌸 MISHU-MD MINI - CHANNEL REACTS PLUGIN
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - CHANNEL REACTS PLUGIN
 // 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
 // 🔥 Channel React + Auto React + API
 // ============================================
