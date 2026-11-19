@@ -8,6 +8,8 @@
     <!-- ========== FONTS & ICONS ========== -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="../assets-logo.png"/>
+    <link rel="apple-touch-icon" href="../assets-logo.png"/>
 
     <style>
         /* ========== RESET & BASE ========== */
@@ -560,6 +562,9 @@ input:focus { outline:none !important; border-color:var(--neon-primary) !importa
 	.theme-switcher button:hover, .theme-switcher button.active { color:#050505; border-color:var(--neon-primary); background:linear-gradient(145deg, var(--neon-primary), var(--neon-secondary)); box-shadow:0 0 20px color-mix(in srgb, var(--neon-primary) 46%, transparent); transform:translateY(-2px); }
 	.theme-switcher .swatch { display:block; width:18px; height:18px; margin:0 auto 9px; border-radius:50%; background:var(--swatch); box-shadow:0 0 12px var(--swatch), 0 0 2px #fff; }
 	@media (max-width:600px) { .theme-toggle { padding:12px 8px; } .theme-switcher { width:min(300px, calc(100vw - 30px)); } }
+
+.logo.logo-image { width:96px !important; height:96px !important; object-fit:cover; border-radius:50%; border:2px solid var(--neon-primary); box-shadow:0 0 18px var(--neon-primary), 0 0 42px color-mix(in srgb, var(--neon-secondary) 42%, transparent); animation:logoPulse 3s ease-in-out infinite; }
+@keyframes logoPulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.045); } }
 </style>
 
 </head>
@@ -592,7 +597,7 @@ input:focus { outline:none !important; border-color:var(--neon-primary) !importa
 
         <!-- ========== HEADER ========== -->
         <div class="header">
-            <span class="logo">🌸</span>
+            <img class="logo logo-image" src="../assets-logo.png" alt="𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 logo"/>
             <h1>𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗</h1>
             <p>Pair your WhatsApp with the bot</p>
             <span class="badge"><i class="fas fa-bolt"></i> Fast & Secure</span>
