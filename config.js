@@ -57,7 +57,7 @@ module.exports = {
      * Create repo: https://github.com/new
      * @type {string}
      */
-    GITHUB_REPO: process.env.GITHUB_REPO || 'https://github.com/Rdx690/SOURAJITVFX-BOT/edit/main/config.js',
+    GITHUB_REPO: process.env.GITHUB_REPO || 'https://github.com/Rdx690/SOURAJITVFX-BOT',
 
     /**
      * @description GitHub Branch
