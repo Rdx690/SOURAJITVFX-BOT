@@ -50,14 +50,14 @@ module.exports = {
      * Permissions: repo (full control)
      * @type {string}
      */
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN || 'session GitHub account classic token',
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN || '',
 
     /**
      * @description GitHub Repository (username/repo)
      * Create repo: https://github.com/new
      * @type {string}
      */
-    GITHUB_REPO: process.env.GITHUB_REPO || 'past your session repo',
+    GITHUB_REPO: process.env.GITHUB_REPO || 'https://github.com/Rdx690/SOURAJITVFX-BOT/edit/main/config.js',
 
     /**
      * @description GitHub Branch
@@ -323,13 +323,13 @@ module.exports = {
      * @description Default bot profile image path/URL
      * @type {string}
      */
-    IMAGE_PATH: process.env.IMAGE_PATH || '',
+    IMAGE_PATH: process.env.IMAGE_PATH || 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
 
     /**
      * @description WhatsApp channel link for updates
      * @type {string}
      */
-    CHANNEL_LINK: process.env.CHANNEL_LINK || '',
+    CHANNEL_LINK: process.env.CHANNEL_LINK || 'https://whatsapp.com/channel/0029Vb9GgMWLI8YZ2iiUtL3q',
 
     /**
      * @description WhatsApp group invite link
@@ -347,7 +347,7 @@ module.exports = {
      * @description Repository link
      * @type {string}
      */
-    REPO: process.env.REPO || 'https://github.com/Rdx690/𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
+    REPO: process.env.REPO || 'https://github.com/Rdx690/SOURAJITVFX-BOT',
 
     // ═══════════════════════════════════════════
     //  🐛 DEBUG & LOGGING
