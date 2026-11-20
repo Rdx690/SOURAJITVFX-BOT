@@ -84,5 +84,6 @@
     "type": "Buffer",
     "data": "CAgIIwgF"
   },
-  "lastAccountSyncTimestamp": 1795159624
+  "lastAccountSyncTimestamp": 1795159624,
+  "lastPropHash": "107mSB"
 }
