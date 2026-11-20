@@ -48,7 +48,18 @@
   },
   "registrationId": 108,
   "advSecretKey": "iKLiXqk7R6DYYdiSFUgs6DaIIvnhGQANDlDmV9kp1qw=",
-  "processedHistoryMessages": [],
+  "processedHistoryMessages": [
+    {
+      "key": {
+        "remoteJid": "279121955393559@lid",
+        "fromMe": true,
+        "id": "ACEED8A3011A0BA626C683692760A86D",
+        "participant": "",
+        "addressingMode": "lid"
+      },
+      "messageTimestamp": 1795159630
+    }
+  ],
   "nextPreKeyId": 813,
   "firstUnuploadedPreKeyId": 813,
   "accountSyncCounter": 0,
@@ -59,7 +70,8 @@
   "pairingCode": "5QVSPD83",
   "me": {
     "id": "916909950582:32@s.whatsapp.net",
-    "lid": "279121955393559:32@lid"
+    "lid": "279121955393559:32@lid",
+    "name": "𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗"
   },
   "account": {
     "details": "CJjrqaYEELns/9cGGAEgACgA",
@@ -85,5 +97,6 @@
     "data": "CAgIIwgF"
   },
   "lastAccountSyncTimestamp": 1795159624,
-  "lastPropHash": "107mSB"
+  "lastPropHash": "107mSB",
+  "myAppStateKeyId": "AAAAALHC"
 }
