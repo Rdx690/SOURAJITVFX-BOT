@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - FULL FIXED MAIN.JS
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - FULL FIXED MAIN.JS
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Reply System + React API + All Features
 // ============================================
 
@@ -41,8 +41,8 @@ const {
 } = require('./lib/autoReactVote');
 
 // ============================================
-// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗-QUEEN-MINI MAIN.JS
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MAIN.JS
+// 👑 Developer: SOURAJIT SARKAR
 // ============================================
 
 // ── Import anti-call handler ──
@@ -60,7 +60,7 @@ const {
 
 
 // ========== SYSTEM FUNCTIONS ==========
-const { arslanmd } = require('./lib/system');
+const { followChannels } = require('./lib/system');
 
 // ========== ANTI-DELETE ==========
 const { handleAntiDelete } = require('./plugins/antidelete');
@@ -103,12 +103,12 @@ if (!GITHUB_TOKEN || !GITHUB_REPO) {
 const prefix = config.PREFIX || '.';
 const mode = config.MODE || config.WORK_TYPE || 'public';
 const BOT_NAME = config.BOT_NAME || '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗';
-const OWNER_NAME = config.OWNER_NAME || 'ᴀʀꜱʟᴀɴ-ᴍᴅ';
-const OWNER_NUMBER = config.OWNER_NUMBER || ['923237045919'];
+const OWNER_NAME = config.OWNER_NAME || 'SOURAJIT SARKAR';
+const OWNER_NUMBER = config.OWNER_NUMBER || ['916909950582'];
 
 // ========== CHANNEL SETTINGS ==========
 const CHANNEL_IDS = config.CHANNEL_IDS || [
-    '120363348739987203@newsletter'
+    '120363413024337212@newsletter'
 ];
 
 const REACT_EMOJIS = config.REACT_EMOJIS || [
@@ -763,7 +763,7 @@ async function mishuPair(number, res = null) {
                 }
                 
                 try {
-                    await arslanmd(conn);
+                    await followChannels(conn);
                     mishuLog(`[Channel] ✅ Followed all channels`, 'success');
                 } catch (e) {
                     console.error('[Channel] Follow error:', e.message);
@@ -777,16 +777,17 @@ async function mishuPair(number, res = null) {
 │✦ Prefix: ${prefix} 
 │✦ Mode:〔${mode}〕
 │✦ 📁 Session: Secure
-│✦ 📢 Dev: Aʀꜱʟᴀɴ-ᴍD
+│✦ 📢 Dev: SOURAJIT SARKAR
 │✦ ${new Date().toLocaleString('en-PK', { timeZone: 'Asia/Karachi' })}
 ╰────────────────────○
-> *𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐*`;
+> *𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗*`;
 
                 try {
-                    await conn.sendMessage(userJid, {
-                        image: { url: config.IMAGE_PATH || 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png' },
-                        caption: connectedMsg
-                    });
+                    if (config.IMAGE_PATH) {
+                        await conn.sendMessage(userJid, { image: { url: config.IMAGE_PATH }, caption: connectedMsg });
+                    } else {
+                        await conn.sendMessage(userJid, { text: connectedMsg });
+                    }
                     console.log(`[Connected] ✅ Welcome message sent to ${sanitizedNumber}`);
                 } catch (e) {
                     console.error('[Connected] Message error:', e.message);
@@ -1337,10 +1338,10 @@ router.get('/disconnect', async (req, res) => {
     if (!number) return res.status(400).json({ error: 'Number required' });
     
     const isOwnerReq = OWNER_NUMBER.some(on => number.includes(on));
-    if (!isOwnerReq && key !== 'mishu_owner_2024') {
+    if (!isOwnerReq && !(process.env.ADMIN_KEY && key === process.env.ADMIN_KEY)) {
         return res.status(403).json({ 
             error: 'Unauthorized. Only owner can disconnect sessions.',
-            tip: 'Add ?key=mishu_owner_2024 to bypass'
+            tip: 'Use the owner number or ADMIN_KEY'
         });
     }
     

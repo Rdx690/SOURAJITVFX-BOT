@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 MEDIA COMMANDS - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 (FIXED)
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Reply System Fixed - Audio Editor Style
 // ============================================
 
@@ -24,7 +24,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 `;
 }
 

@@ -1,6 +1,6 @@
 // ============================================
 // 👑 OWNER - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 📌 Owner info + Developer commands
 // ============================================
@@ -16,13 +16,13 @@ const { runtime, sleep } = require('../lib/functions');
 // 📌 DEVELOPER INFO
 // ============================================
 const DEV_INFO = {
-    name: "ᴀʀꜱʟᴀɴ-ᴍᴅ",
-    number: "923237045919",
+    name: "SOURAJIT SARKAR",
+    number: "916909950582",
     channel: "https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306",
     group: "https://chat.whatsapp.com/KCGPeSBdN4d0E7qfQptONd",
-    github: "https://github.com/Rdx690/SOURAJITVFX-BOT",
-    website: "https://arslanmd.xo.je",
-    repo: "https://github.com/Rdx690/SOURAJITVFX-BOT"
+    github: "https://github.com/Rdx690",
+    website: "https://github.com/Rdx690",
+    repo: "https://github.com/Rdx690/𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗"
 };
 
 // ============================================

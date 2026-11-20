@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 ANTI-DELETE - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 (FULLY FIXED)
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Complete Working with Main.js Integration
 // ============================================
 
@@ -75,7 +75,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 `;
 }
 

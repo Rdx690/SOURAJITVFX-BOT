@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 ANTI-DELETE DATA HANDLER - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // ============================================
 
 const fs = require('fs');

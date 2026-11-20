@@ -1,7 +1,7 @@
 const { mishu } = require("../mishu");
 const config = require('../config');
 
-// 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 style formatter
+// 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 formatter
 function mishuStyle(title, value, status) {
     return `
 *╭─────𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗──────◇*
@@ -9,7 +9,7 @@ function mishuStyle(title, value, status) {
 *│❀ ⚙️ 𝐒𝐭𝐚𝐭𝐮𝐬:* ${status}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 
-> ${config.DESCRIPTION || 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴹᴿAʀꜱʟᴀɴ-ᴍD  🤍'}
+> ${config.DESCRIPTION || 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴹᴿSOURAJIT SARKAR  🤍'}
 `;
 }
 

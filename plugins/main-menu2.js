@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 FULL MENU
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Gifted-btns + Whisky Baileys Carousel
 // 💖 Public - Everyone Can Use
 // ============================================
@@ -169,7 +169,7 @@ mishu({
         const memory = process.memoryUsage();
         const prefix = config.PREFIX || '.';
         const botName = config.BOT_NAME || '🌸𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗🌸';
-        const ownerName = config.OWNER_NAME || 'ᴀʀꜱʟᴀɴ-ᴍᴅ';
+        const ownerName = config.OWNER_NAME || 'SOURAJIT SARKAR';
         const pakTime = moment().tz('Asia/Karachi').format('hh:mm:ss A');
         const pakDate = moment().tz('Asia/Karachi').format('DD/MM/YYYY');
 
@@ -293,7 +293,7 @@ mishu({
             const totalCommands = commands ? commands.length : 0;
             const prefix = config.PREFIX || '.';
             const botName = config.BOT_NAME || '🌸𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗🌸';
-            const ownerName = config.OWNER_NAME || 'ᴀʀꜱʟᴀɴ-ᴍᴅ';
+            const ownerName = config.OWNER_NAME || 'SOURAJIT SARKAR';
 
             // ── Get categories ──
             const categoryMap = new Map();
@@ -341,7 +341,7 @@ mishu({
         const totalCommands = commands ? commands.length : 0;
         const prefix = config.PREFIX || '.';
         const botName = config.BOT_NAME || '🌸𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗🌸';
-        const ownerName = config.OWNER_NAME || 'ᴀʀꜱʟᴀɴ-ᴍᴅ';
+        const ownerName = config.OWNER_NAME || 'SOURAJIT SARKAR';
 
         // ── Get categories ──
         const categoryMap = new Map();

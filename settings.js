@@ -10,8 +10,8 @@
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ============================================
-// 🔥 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - COMPLETE SETTINGS
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🔥 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - COMPLETE SETTINGS
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 GitHub Session System + All Features
 // ============================================
 
@@ -50,14 +50,14 @@ module.exports = {
      * Permissions: repo (full control)
      * @type {string}
      */
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN || '',
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN || 'session GitHub account classic token',
 
     /**
      * @description GitHub Repository (username/repo)
      * Create repo: https://github.com/new
      * @type {string}
      */
-    GITHUB_REPO: process.env.GITHUB_REPO || 'Rdx690/SOURAJITVFX-BOT',
+    GITHUB_REPO: process.env.GITHUB_REPO || 'past your session repo',
 
     /**
      * @description GitHub Branch
@@ -74,11 +74,7 @@ module.exports = {
     // ═══════════════════════════════════════════
     //  🤖 BOT IDENTITY
     // ═══════════════════════════════════════════
-    // ... existing settings ...
-
     // ── Channel Settings ──
-    CHANNEL_JID: '120363413024337212@newsletter',
-    
     CHANNEL_IDS: [
         '120363413024337212@newsletter'
     ],
@@ -94,6 +90,9 @@ module.exports = {
      */
     PREFIX: process.env.PREFIX || '.',
 
+    /** Public URL of your deployed pair site (used by the .pair command) */
+    PAIR_URL: process.env.PAIR_URL || '',
+
     /**
      * @description Bot work mode
      * @type {('public'|'private'|'group'|'inbox')}
@@ -104,7 +103,7 @@ module.exports = {
      * @description Display name of the bot
      * @type {string}
      */
-    BOT_NAME: process.env.BOT_NAME || '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
+    BOT_NAME: process.env.BOT_NAME || 'SOURAJITVFX',
 
     /**
      * @description Owner name
@@ -124,26 +123,7 @@ module.exports = {
      * @description Bot footer text
      * @type {string}
      */
-    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
-
- // ============================================
-    // 📵 ANTI-CALL SETTINGS
-    // ============================================
-
-    /**
-     * @description Auto reject incoming calls
-     * @type {string}
-     * @default "false"
-     */
-    ANTI_CALL: 'false',
-
-    /**
-     * @description Message sent when rejecting calls
-     * @type {string}
-     */
-    REJECT_MSG: '📵 Call rejected by bot',
-
-    // ... rest of settings ...
+    BOT_FOOTER: process.env.BOT_FOOTER || '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ SOURAJIT SARKAR',
 
     // ═══════════════════════════════════════════
     //  👁️ STATUS AUTOMATION
@@ -349,13 +329,13 @@ module.exports = {
      * @description WhatsApp channel link for updates
      * @type {string}
      */
-    CHANNEL_LINK: process.env.CHANNEL_LINK || 'https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306',
+    CHANNEL_LINK: process.env.CHANNEL_LINK || '',
 
     /**
      * @description WhatsApp group invite link
      * @type {string}
      */
-    GROUP_LINK: process.env.GROUP_LINK || 'https://chat.whatsapp.com/KCGPeSBdN4d0E7qfQptONd',
+    GROUP_LINK: process.env.GROUP_LINK || '',
 
     /**
      * @description Owner WhatsApp link
@@ -367,7 +347,7 @@ module.exports = {
      * @description Repository link
      * @type {string}
      */
-    REPO: process.env.REPO || 'https://github.com/Rdx690/SOURAJITVFX-BOT',
+    REPO: process.env.REPO || 'https://github.com/Rdx690/𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
 
     // ═══════════════════════════════════════════
     //  🐛 DEBUG & LOGGING
@@ -442,8 +422,8 @@ module.exports = {
 
 /**
  * @module settings
- * @description 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI Configuration Module
+ * @description 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 Configuration Module
  * @version 2.0.0
- * @author ᴀʀꜱʟᴀɴ-ᴍᴅ
+ * @author SOURAJIT SARKAR
  * @license MIT
  */

@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 AUDIO EFFECTS - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 (FULLY FIXED)
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // ============================================
 
 const { fakevCard } = require('../lib/fakevCard');
@@ -83,7 +83,7 @@ async function handleAudioEffect(client, mek, m, { from, reply, effect, emoji, n
 │  ✿ 🎵 Audio processed
 ╰━━━━━━━━━━━━━━━━━━⊷
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
         `;
 
         await client.sendMessage(from, {
@@ -94,7 +94,7 @@ async function handleAudioEffect(client, mek, m, { from, reply, effect, emoji, n
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
                     serverMessageId: 143
                 }
@@ -326,7 +326,7 @@ mishu({
 🌸 *Usage:*
 • Reply to audio/video: \`.effect\`
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `;
     reply(effectsList);
 });

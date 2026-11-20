@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - SPOTIFY SONG DOWNLOADER
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 📌 Converted from your friend's bot
 // ============================================
@@ -51,7 +51,7 @@ async (mishu, mek, m, { from, reply, text }) => {
 │ ♡⪼. 📥 Processing...
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
         `;
 
         await mishu.sendMessage(from, {

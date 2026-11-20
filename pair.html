@@ -2,1255 +2,320 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - Pairing</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="icon" type="image/png" href="assets-logo.png">
-<link rel="apple-touch-icon" href="assets-logo.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<title>𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 · Pair</title>
 <style>
-/* ============================================
-   🌸 GLOBAL STYLES
-   ============================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --rgb-speed: 16s;
-    --glass-bg: rgba(0, 0, 0, 0.85);
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    background: #0a0a0f;
-    color: #fff;
-    padding: 20px;
-    overflow-x: hidden;
-    position: relative;
-}
-
-/* ─── ANIMATED BACKGROUND ─── */
-.bg-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-    background: radial-gradient(ellipse at 20% 50%, rgba(120, 80, 255, 0.08) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 50%, rgba(255, 80, 120, 0.08) 0%, transparent 60%);
-}
-
-.bg-canvas .orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(100px);
-    opacity: 0.3;
-}
-
-.bg-canvas .orb-1 {
-    width: 400px;
-    height: 400px;
-    top: -100px;
-    right: -100px;
-    background: #7c3aed;
-    animation: orbFloat1 12s ease-in-out infinite;
-}
-
-.bg-canvas .orb-2 {
-    width: 500px;
-    height: 500px;
-    bottom: -200px;
-    left: -150px;
-    background: #ec4899;
-    animation: orbFloat2 15s ease-in-out infinite;
-}
-
-@keyframes orbFloat1 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(-80px, 60px) scale(1.2); }
-}
-
-@keyframes orbFloat2 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(80px, -60px) scale(1.3); }
-}
-
-/* ─── PARTICLES ─── */
-.particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.particle {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    animation: floatParticle linear infinite;
-}
-
-@keyframes floatParticle {
-    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
-}
-
-/* ─── GRID LINES ─── */
-.grid-lines {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 60px 60px;
-}
-
-/* ============================================
-   🌸 CARD
-   ============================================ */
-.card {
-    position: relative;
-    z-index: 1;
-    width: 90%;
-    max-width: 420px;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 28px;
-    padding: 32px 24px 28px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.03);
-    animation: cardIn 0.8s ease-out;
-}
-
-@keyframes cardIn {
-    from {
-        opacity: 0;
-        transform: translateY(40px) scale(0.96);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    border-radius: 29px;
-    padding: 1px;
-    background: linear-gradient(135deg, 
-        rgba(124, 58, 237, 0.3), 
-        transparent 40%, 
-        transparent 60%, 
-        rgba(236, 72, 153, 0.3));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-}
-
-/* ============================================
-   🌸 RGB TEXT ANIMATION
-   ============================================ */
-@keyframes rgbText {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 400% 50%; }
-}
-
-.rgb-text {
-    background: linear-gradient(90deg, #ff4d6d, #ff8a4d, #ffd93d, #6bcb77, #4d96ff, #9b59ff, #ff4d6d);
-    background-size: 400% 100%;
-    animation: rgbText var(--rgb-speed) linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* ============================================
-   🌸 HEADER
-   ============================================ */
-.logo-wrapper {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 8px;
-}
-
-.logo-wrapper .ring {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 1px solid rgba(124, 58, 237, 0.15);
-    animation: ringSpin 8s linear infinite;
-}
-
-.logo-wrapper .ring::before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #a78bfa;
-    box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
-}
-
-@keyframes ringSpin {
-    to { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.logo-icon {
-    font-size: 45px;
-    display: block;
-    position: relative;
-    z-index: 1;
-    animation: pulse 2.5s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-}
-
-h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-    margin-bottom: 2px;
-}
-
-h1:last-of-type {
-    font-size: 1.6rem;
-    margin-bottom: 4px;
-}
-
-.status {
-    font-size: 0.72rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.8;
-    margin: 6px 0 16px 0;
-    font-weight: 500;
-}
-
-/* ============================================
-   🌸 INPUT
-   ============================================ */
-@keyframes rgbMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 300% 50%; }
-}
-
-.rgb-box {
-    padding: 3px;
-    border-radius: 18px;
-    background: linear-gradient(90deg, #ff4d6d, #ff8a4d, #ffd93d, #6bcb77, #4d96ff, #9b59ff, #ff4d6d);
-    background-size: 300% 100%;
-    animation: rgbMove 4s linear infinite;
-    width: 100%;
-    max-width: 340px;
-    margin: 0 auto 16px auto;
-}
-
-.rgb-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 16px;
-    border-radius: 16px;
-    background: #0a0a0f;
-    color: #fff;
-    text-align: center;
-    font-size: 1.05rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.rgb-box input::placeholder {
-    color: #444;
-    font-weight: 300;
-}
-
-.rgb-box input:focus {
-    background: #111118;
-}
-
-/* ─── HINT ─── */
-.hint {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.15);
-    margin-top: -8px;
-    margin-bottom: 14px;
-    display: block;
-    letter-spacing: 1px;
-}
-
-/* ============================================
-   🌸 BUTTONS
-   ============================================ */
-.btn-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 340px;
-    margin: 0 auto;
-}
-
-.rgb-btn {
-    width: 100%;
-    padding: 3px;
-    border-radius: 18px;
-    background: linear-gradient(90deg, #ff4d6d, #ff8a4d, #ffd93d, #6bcb77, #4d96ff, #9b59ff, #ff4d6d);
-    background-size: 300% 100%;
-    animation: rgbMove 4s linear infinite;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    transition: all 0.3s;
-}
-
-.btn-inner {
-    background: #0a0a0f;
-    color: #fff;
-    display: block;
-    padding: 14px;
-    border-radius: 16px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.rgb-btn:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 40px rgba(155, 89, 255, 0.15);
-}
-
-.rgb-btn:hover .btn-inner {
-    background: #111118;
-}
-
-.rgb-btn:active {
-    transform: scale(0.97);
-}
-
-/* ── Force Pair ── */
-.force-btn {
-    width: 100%;
-    padding: 3px;
-    border-radius: 18px;
-    background: linear-gradient(90deg, #ff4d6d, #ff6b6b, #ff8a4d, #ffd93d, #6bcb77, #4d96ff, #9b59ff);
-    background-size: 300% 100%;
-    animation: rgbMove 6s linear infinite;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    transition: all 0.3s;
-}
-
-.force-btn .btn-inner {
-    background: #0a0a0f;
-    color: #ff6b6b;
-    display: block;
-    padding: 12px;
-    border-radius: 16px;
-    font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 77, 77, 0.1);
-}
-
-.force-btn:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 40px rgba(255, 77, 77, 0.15);
-}
-
-.force-btn:hover .btn-inner {
-    background: #1a0a0a;
-    border-color: rgba(255, 77, 77, 0.3);
-}
-
-/* ── Disconnect ── */
-.dc-btn {
-    width: 100%;
-    padding: 3px;
-    border-radius: 18px;
-    background: linear-gradient(90deg, #444, #666, #444);
-    background-size: 300% 100%;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    transition: all 0.3s;
-}
-
-.dc-btn .btn-inner {
-    background: #0a0a0f;
-    color: #888;
-    display: block;
-    padding: 10px;
-    border-radius: 16px;
-    font-weight: 600;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.03);
-}
-
-.dc-btn:hover .btn-inner {
-    color: #ff4d6d;
-    border-color: rgba(255, 77, 77, 0.15);
-}
-
-/* ── Disabled state ── */
-.rgb-btn:disabled,
-.force-btn:disabled,
-.dc-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
-}
-
-/* ============================================
-   🌸 RESULT BOX
-   ============================================ */
-.result-box {
-    width: 100%;
-    max-width: 340px;
-    margin: 16px auto 0;
-    padding: 3px;
-    border-radius: 18px;
-    background: linear-gradient(90deg, #ff4d6d, #ff8a4d, #ffd93d, #6bcb77, #4d96ff, #9b59ff, #ff4d6d);
-    background-size: 300% 100%;
-    animation: rgbMove 5s linear infinite;
-    display: none;
-    transition: all 0.3s ease;
-}
-
-.result-box.show {
-    display: block;
-    animation: fadeSlideUp 0.5s ease;
-}
-
-@keyframes fadeSlideUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.result-inner {
-    background: #0a0a0f;
-    border-radius: 16px;
-    padding: 16px;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
-    flex-direction: column;
-    gap: 4px;
-}
-
-#codeBox {
-    letter-spacing: 4px;
-    color: #fff;
-    cursor: default;
-    font-family: 'Orbitron', monospace;
-    word-break: break-all;
-}
-
-.result-success { color: #6bcb77 !important; }
-.result-error { color: #ff4d6d !important; }
-.result-warning { color: #ffd93d !important; }
-.result-info { color: #4d96ff !important; }
-.result-force { color: #ff6b6b !important; }
-
-/* ─── COPY BUTTON ─── */
-.copy-btn {
-    margin-top: 10px;
-    padding: 6px 18px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 11px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.copy-btn:hover {
-    background: rgba(255, 255, 255, 0.07);
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.copy-btn.copied {
-    background: rgba(52, 211, 153, 0.1);
-    border-color: rgba(52, 211, 153, 0.15);
-    color: #34d399;
-}
-
-/* ============================================
-   🌸 BADGES
-   ============================================ */
-.badge-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 16px;
-}
-
-.badge {
-    padding: 4px 14px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    font-size: 0.6rem;
-    letter-spacing: 0.5px;
-    color: #666;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.badge i {
-    margin-right: 4px;
-}
-
-/* ============================================
-   🌸 STATUS INDICATOR
-   ============================================ */
-.status-indicator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 14px;
-}
-
-.status-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
-}
-
-.status-dot.online {
-    background: #34d399;
-    box-shadow: 0 0 20px rgba(52, 211, 153, 0.15);
-    animation: dotPulse 1.5s ease-in-out infinite;
-}
-
-@keyframes dotPulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-}
-
-.status-text {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.15);
-    letter-spacing: 1px;
-}
-
-/* ============================================
-   🌸 FOOTER
-   ============================================ */
-.footer {
-    margin-top: 16px;
-    text-align: center;
-    font-size: 0.6rem;
-    color: rgba(255, 255, 255, 0.08);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.footer .heart {
-    color: #ec4899;
-    margin: 0 3px;
-}
-
-.footer .dev {
-    color: rgba(255, 255, 255, 0.05);
-    margin-top: 2px;
-    font-size: 0.5rem;
-    letter-spacing: 2px;
-}
-
-.footer .dev i {
-    color: #a78bfa;
-    margin: 0 3px;
-}
-
-/* ============================================
-   🌸 TOAST
-   ============================================ */
-.toast {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%) translateY(100px);
-    padding: 12px 24px;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(20px);
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: #fff;
-    font-size: 13px;
-    z-index: 999;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-    max-width: 90%;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-}
-
-.toast.show {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-}
-
-.toast.success { border-color: rgba(52, 211, 153, 0.15); }
-.toast.error { border-color: rgba(251, 113, 133, 0.15); }
-.toast.info { border-color: rgba(96, 165, 250, 0.15); }
-.toast.warning { border-color: rgba(251, 191, 36, 0.15); }
-
-/* ============================================
-   🌸 RESPONSIVE
-   ============================================ */
-@media (max-width: 480px) {
-    .card {
-        padding: 24px 16px 20px;
-        border-radius: 22px;
-    }
-    
-    h1 {
-        font-size: 1.7rem;
-    }
-    h1:last-of-type {
-        font-size: 1.4rem;
-    }
-    
-    .logo-icon {
-        font-size: 36px;
-    }
-    .logo-wrapper .ring {
-        width: 58px;
-        height: 58px;
-    }
-    
-    .rgb-box input {
-        font-size: 0.95rem;
-        padding: 14px;
-    }
-    
-    .btn-inner {
-        font-size: 0.9rem;
-        padding: 12px;
-    }
-    
-    .force-btn .btn-inner {
-        font-size: 0.75rem;
-        padding: 10px;
-    }
-    
-    .dc-btn .btn-inner {
-        font-size: 0.65rem;
-        padding: 8px;
-    }
-    
-    .result-inner {
-        font-size: 1rem;
-        padding: 14px;
-        min-height: 50px;
-    }
-    
-    #codeBox {
-        font-size: 1rem;
-        letter-spacing: 3px;
-    }
-    
-    .badge {
-        font-size: 0.5rem;
-        padding: 3px 10px;
-    }
-    
-    .toast {
-        font-size: 12px;
-        padding: 10px 18px;
-        bottom: 20px;
-    }
-}
-
-@media (max-width: 380px) {
-    .card {
-        padding: 18px 12px 16px;
-        border-radius: 18px;
-    }
-    
-    h1 {
-        font-size: 1.4rem;
-    }
-    h1:last-of-type {
-        font-size: 1.2rem;
-    }
-    
-    .logo-icon {
-        font-size: 30px;
-    }
-    .logo-wrapper .ring {
-        width: 48px;
-        height: 48px;
-    }
-}
+:root{
+  --bg:#000;
+  --panel:#0b0b0d;
+  --line:#1e1e24;
+  --line-hi:#34343e;
+  --text:#f4f4f6;
+  --mute:#8a8a96;
+  --acc:#00e5ff;
+  --acc2:#7c5cff;
+  --ok:#2ee59d;
+  --warn:#ffb020;
+  --err:#ff4d6d;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{min-height:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+  display:flex;align-items:center;justify-content:center;
+  min-height:100vh;padding:20px 16px;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background:
+    radial-gradient(600px 300px at 50% 0%,rgba(0,229,255,.10),transparent 70%),
+    radial-gradient(500px 300px at 50% 100%,rgba(124,92,255,.10),transparent 70%);
+}
+.card{
+  position:relative;width:100%;max-width:420px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:30px 24px 22px;
+  box-shadow:0 0 0 1px #000,0 30px 80px rgba(0,0,0,.8);
+}
+.card::before{
+  content:"";position:absolute;left:24px;right:24px;top:-1px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--acc),var(--acc2),transparent);
+}
+.brand{text-align:center;margin-bottom:22px}
+.brand .mark{
+  width:54px;height:54px;margin:0 auto 14px;border-radius:16px;
+  display:grid;place-items:center;font-size:24px;font-weight:800;
+  background:#000;border:1px solid var(--line-hi);
+  box-shadow:0 0 24px rgba(0,229,255,.25),inset 0 0 14px rgba(124,92,255,.25);
+  color:var(--acc);
+}
+.brand h1{
+  font-size:22px;line-height:1.25;letter-spacing:.5px;font-weight:700;
+  background:linear-gradient(90deg,var(--acc),var(--acc2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  word-break:break-word;
+}
+.brand p{margin-top:6px;color:var(--mute);font-size:13px}
+
+label{display:block;font-size:12px;letter-spacing:1px;color:var(--mute);margin:0 0 8px 2px;text-transform:uppercase}
+.field{
+  display:flex;align-items:center;gap:8px;
+  background:#000;border:1px solid var(--line-hi);border-radius:12px;padding:0 14px;
+  transition:border-color .2s, box-shadow .2s;
+}
+.field:focus-within{border-color:var(--acc);box-shadow:0 0 0 3px rgba(0,229,255,.12)}
+.field span{color:var(--mute);font-size:16px}
+.field input{
+  flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--text);
+  font-size:17px;letter-spacing:1.5px;padding:15px 0;font-variant-numeric:tabular-nums;
+}
+.field input::placeholder{color:#4a4a55;letter-spacing:1px}
+.hint{display:block;margin:8px 2px 0;font-size:12px;color:var(--mute)}
+
+.btns{display:grid;gap:10px;margin-top:18px}
+button{
+  font:inherit;cursor:pointer;border-radius:12px;padding:14px 16px;font-weight:600;
+  letter-spacing:.6px;font-size:14px;transition:transform .08s, opacity .2s, border-color .2s, background .2s;
+}
+button:active{transform:scale(.985)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.primary{
+  border:0;color:#001014;
+  background:linear-gradient(90deg,var(--acc),#6ff3ff);
+  box-shadow:0 8px 28px rgba(0,229,255,.22);
+}
+.ghost{background:transparent;color:var(--text);border:1px solid var(--line-hi)}
+.ghost:hover:not(:disabled){border-color:var(--acc2);background:rgba(124,92,255,.08)}
+
+.result{
+  margin-top:20px;border:1px dashed var(--line-hi);border-radius:14px;
+  padding:18px 14px;text-align:center;min-height:92px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  transition:border-color .25s;
+}
+.result.success{border-style:solid;border-color:var(--ok)}
+.result.error{border-style:solid;border-color:var(--err)}
+.result.warning{border-style:solid;border-color:var(--warn)}
+.result.info{border-style:solid;border-color:var(--acc)}
+.msg{font-size:14px;line-height:1.5;color:var(--mute);white-space:pre-line}
+.result.error .msg{color:var(--err)}
+.result.warning .msg{color:var(--warn)}
+.result.info .msg{color:var(--acc)}
+.code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:clamp(28px,9vw,36px);font-weight:800;letter-spacing:5px;color:var(--ok);
+  text-shadow:0 0 22px rgba(46,229,157,.35);user-select:all;
+}
+.copy{
+  padding:9px 18px;font-size:13px;border-radius:10px;
+  background:transparent;color:var(--ok);border:1px solid var(--ok);
+}
+.copy:hover{background:rgba(46,229,157,.1)}
+.spin{
+  width:22px;height:22px;border-radius:50%;
+  border:2px solid var(--line-hi);border-top-color:var(--acc);animation:sp .8s linear infinite;
+}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+.steps{margin-top:18px;border-top:1px solid var(--line);padding-top:14px;font-size:12.5px;color:var(--mute);line-height:1.7}
+.steps b{color:var(--text);font-weight:600}
+
+.foot{margin-top:18px;text-align:center;font-size:12px;color:#5d5d68}
+.foot em{font-style:normal;color:var(--text)}
+
+.toast{
+  position:fixed;left:50%;bottom:22px;transform:translate(-50%,30px);opacity:0;pointer-events:none;
+  background:#0f0f12;border:1px solid var(--line-hi);color:var(--text);
+  padding:11px 18px;border-radius:12px;font-size:13px;transition:.25s;z-index:10;max-width:90vw;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.success{border-color:var(--ok)}
+.toast.error{border-color:var(--err)}
 </style>
-
-<style id="sourajitvfx-black-theme">
-/* 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 monochrome theme */
-:root { --accent: #ffffff; --accent-soft: rgba(255,255,255,.12); --panel: rgba(10,10,10,.94); }
-body { background: #000 !important; color: #f5f5f5 !important; }
-.bg-canvas { background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.07), transparent 55%) !important; }
-.bg-canvas .orb { background: #fff !important; opacity: .035 !important; }
-.card { background: rgba(8,8,8,.94) !important; border: 1px solid rgba(255,255,255,.16) !important; box-shadow: 0 24px 80px rgba(0,0,0,.85) !important; }
-.rgb-text, .header h1, .footer, .hint, .badge, .status-text { color: #f5f5f5 !important; background: none !important; -webkit-text-fill-color: #f5f5f5 !important; }
-.rgb-btn, .force-btn, .dc-btn, .copy-btn { background: #fff !important; color: #000 !important; border-color: #fff !important; }
-.rgb-box, input, .result-box, .badge { background: rgba(255,255,255,.04) !important; border-color: rgba(255,255,255,.18) !important; color: #fff !important; }
-.logo-wrapper .ring { border-color: rgba(255,255,255,.65) !important; }
-.logo-icon, .heart { filter: grayscale(1); }
-</style>
-
-<style id="sourajitvfx-neon-theme-system">
-/* 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 NEON CYBERPUNK THEME SYSTEM */
-:root {
-  --neon-primary: #00f5ff;
-  --neon-secondary: #ff2bd6;
-  --neon-accent: #b8ff00;
-  --neon-bg: #05030d;
-  --neon-panel: rgba(10, 8, 24, .88);
-  --neon-line: rgba(0, 245, 255, .34);
-  --neon-text: #f5fbff;
-  --neon-muted: #9aa9c5;
-}
-body[data-theme="cyberpunk"] { --neon-primary:#00f5ff; --neon-secondary:#ff2bd6; --neon-accent:#b8ff00; --neon-bg:#05030d; --neon-panel:rgba(10,8,24,.9); --neon-line:rgba(0,245,255,.35); }
-body[data-theme="matrix"] { --neon-primary:#00ff66; --neon-secondary:#00c853; --neon-accent:#d7ff00; --neon-bg:#010b06; --neon-panel:rgba(1,20,10,.92); --neon-line:rgba(0,255,102,.34); }
-body[data-theme="synthwave"] { --neon-primary:#ff4fd8; --neon-secondary:#795cff; --neon-accent:#ffca3a; --neon-bg:#10051c; --neon-panel:rgba(27,8,44,.92); --neon-line:rgba(255,79,216,.36); }
-body[data-theme="ice"] { --neon-primary:#8be9fd; --neon-secondary:#448aff; --neon-accent:#e5f9ff; --neon-bg:#031018; --neon-panel:rgba(5,24,37,.92); --neon-line:rgba(139,233,253,.36); }
-body[data-theme="crimson"] { --neon-primary:#ff355e; --neon-secondary:#ff8a00; --neon-accent:#ffe66d; --neon-bg:#110306; --neon-panel:rgba(31,7,12,.92); --neon-line:rgba(255,53,94,.36); }
-body[data-theme="mono"] { --neon-primary:#ffffff; --neon-secondary:#aeb8c5; --neon-accent:#ffffff; --neon-bg:#050505; --neon-panel:rgba(15,15,15,.94); --neon-line:rgba(255,255,255,.28); }
-body { background: var(--neon-bg) !important; color: var(--neon-text) !important; transition: background .35s ease, color .35s ease; }
-body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.22; background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(255,255,255,.025) 4px, transparent 5px); mix-blend-mode:screen; }
-body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:0; background: radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--neon-primary) 16%, transparent), transparent 34%), radial-gradient(circle at 90% 85%, color-mix(in srgb, var(--neon-secondary) 13%, transparent), transparent 37%); }
-.bg-canvas, .bg-animation { background: transparent !important; }
-.bg-canvas .orb { background: var(--neon-secondary) !important; opacity:.12 !important; filter:blur(90px); }
-.card, .container { background: var(--neon-panel) !important; border:1px solid var(--neon-line) !important; box-shadow: 0 0 0 1px rgba(255,255,255,.025), 0 0 22px color-mix(in srgb, var(--neon-primary) 18%, transparent), 0 25px 90px rgba(0,0,0,.75) !important; backdrop-filter: blur(22px); }
-.card::before, .container::before { content:""; position:absolute; inset:8px; pointer-events:none; border:1px solid color-mix(in srgb, var(--neon-primary) 16%, transparent); border-radius:inherit; }
-.rgb-text, .header h1, .header h1 span { color:var(--neon-primary) !important; background:none !important; -webkit-text-fill-color:var(--neon-primary) !important; text-shadow:0 0 8px color-mix(in srgb, var(--neon-primary) 70%, transparent), 0 0 28px color-mix(in srgb, var(--neon-primary) 32%, transparent); }
-input, .input-wrapper, .rgb-box, .result-box { background:rgba(0,0,0,.4) !important; border-color:var(--neon-line) !important; color:var(--neon-text) !important; box-shadow: inset 0 0 14px rgba(0,0,0,.5), 0 0 12px color-mix(in srgb, var(--neon-primary) 9%, transparent); }
-input:focus { outline:none !important; border-color:var(--neon-primary) !important; box-shadow:0 0 0 2px color-mix(in srgb, var(--neon-primary) 18%, transparent), 0 0 18px color-mix(in srgb, var(--neon-primary) 28%, transparent) !important; }
-.rgb-btn, .force-btn, .dc-btn, .btn-primary, .btn-secondary, .copy-btn { background:linear-gradient(100deg, var(--neon-primary), var(--neon-secondary)) !important; color:#050505 !important; border:1px solid var(--neon-primary) !important; box-shadow:0 0 14px color-mix(in srgb, var(--neon-primary) 36%, transparent) !important; font-weight:800; letter-spacing:.04em; }
-.rgb-btn:hover, .force-btn:hover, .dc-btn:hover, .btn-primary:hover, .btn-secondary:hover, .copy-btn:hover { filter:brightness(1.18); transform:translateY(-2px); }
-.badge, .feature-item, .status, .pairing-code { background:color-mix(in srgb, var(--neon-primary) 7%, transparent) !important; border-color:var(--neon-line) !important; color:var(--neon-text) !important; }
-.footer, .hint, .header p, .status-text { color:var(--neon-muted) !important; }
-.footer a, .heart { color:var(--neon-secondary) !important; }
-
-	.theme-toggle { position:fixed; z-index:31; top:50%; right:0; transform:translateY(-50%); border:1px solid var(--neon-line); border-right:0; border-radius:14px 0 0 14px; padding:14px 9px; cursor:pointer; color:var(--neon-primary); background:linear-gradient(180deg, rgba(8,10,28,.94), rgba(12,5,26,.94)); box-shadow:0 0 18px color-mix(in srgb, var(--neon-primary) 28%, transparent); writing-mode:vertical-rl; text-orientation:mixed; font:800 10px/1 inherit; letter-spacing:.16em; text-transform:uppercase; transition:.25s ease; }
-	.theme-toggle:hover { padding-right:14px; color:#050505; background:var(--neon-primary); box-shadow:0 0 28px color-mix(in srgb, var(--neon-primary) 55%, transparent); }
-	.theme-toggle i { margin-bottom:8px; }
-	.theme-backdrop { position:fixed; inset:0; z-index:28; background:rgba(0,0,0,.48); opacity:0; pointer-events:none; transition:opacity .3s ease; backdrop-filter:blur(3px); }
-	.theme-backdrop.open { opacity:1; pointer-events:auto; }
-	.theme-switcher { position:fixed; z-index:30; top:0; right:0; height:100vh; width:min(320px, calc(100vw - 42px)); padding:28px 18px; border-left:1px solid var(--neon-line); border-radius:22px 0 0 22px; background:linear-gradient(145deg, rgba(8,10,28,.97), rgba(22,5,30,.96)); box-shadow:-18px 0 55px rgba(0,0,0,.58), 0 0 28px color-mix(in srgb, var(--neon-primary) 18%, transparent); backdrop-filter:blur(24px); font-family:inherit; transform:translateX(105%); transition:transform .35s cubic-bezier(.22,.8,.25,1); }
-	.theme-switcher.open { transform:translateX(0); }
-	.theme-switcher::before { content:""; position:absolute; top:10%; bottom:10%; left:0; width:2px; background:linear-gradient(180deg, transparent, var(--neon-primary), var(--neon-secondary), transparent); box-shadow:0 0 18px var(--neon-primary); }
-	.theme-switcher .theme-title { display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; padding-bottom:14px; border-bottom:1px solid var(--neon-line); color:var(--neon-primary); font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
-	.theme-switcher .theme-title::after { content:"TAP TO SWITCH"; position:absolute; top:58px; left:18px; color:var(--neon-muted); font-size:9px; letter-spacing:.12em; }
-	.theme-switcher .theme-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:28px; }
-	.theme-switcher button { min-height:74px; border:1px solid rgba(255,255,255,.13); border-radius:14px; padding:12px 6px; cursor:pointer; color:#eaf5ff; background:linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.025)); font:700 11px/1.1 inherit; transition:.25s ease; }
-	.theme-switcher button:hover, .theme-switcher button.active { color:#050505; border-color:var(--neon-primary); background:linear-gradient(145deg, var(--neon-primary), var(--neon-secondary)); box-shadow:0 0 20px color-mix(in srgb, var(--neon-primary) 46%, transparent); transform:translateY(-2px); }
-	.theme-switcher .swatch { display:block; width:18px; height:18px; margin:0 auto 9px; border-radius:50%; background:var(--swatch); box-shadow:0 0 12px var(--swatch), 0 0 2px #fff; }
-	@media (max-width:600px) { .theme-toggle { padding:12px 8px; } .theme-switcher { width:min(300px, calc(100vw - 30px)); } }
-
-.logo-icon.logo-image { width:96px; height:96px; display:block; object-fit:cover; border-radius:50%; border:2px solid var(--neon-primary); box-shadow:0 0 18px var(--neon-primary), 0 0 42px color-mix(in srgb, var(--neon-secondary) 42%, transparent); animation:logoPulse 3s ease-in-out infinite; }
-@keyframes logoPulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.045); } }
-</style>
-
 </head>
 <body>
 
-<button class="theme-toggle" id="themeToggle" type="button" aria-controls="themeSwitcher" aria-expanded="false"><i class="fas fa-sliders-h"></i> THEMES</button>
-<div class="theme-backdrop" id="themeBackdrop"></div>
-<aside class="theme-switcher" id="themeSwitcher" aria-label="Theme selector">
-  <div class="theme-title"><span><i class="fas fa-bolt"></i> Theme Core</span><span id="themeStatus">CYBERPUNK</span></div>
-  <div class="theme-grid">
-    <button type="button" data-theme-choice="cyberpunk"><span class="swatch" style="--swatch:#00f5ff"></span>Cyberpunk</button>
-    <button type="button" data-theme-choice="matrix"><span class="swatch" style="--swatch:#00ff66"></span>Matrix</button>
-    <button type="button" data-theme-choice="synthwave"><span class="swatch" style="--swatch:#ff4fd8"></span>Synthwave</button>
-    <button type="button" data-theme-choice="ice"><span class="swatch" style="--swatch:#8be9fd"></span>Ice</button>
-    <button type="button" data-theme-choice="crimson"><span class="swatch" style="--swatch:#ff355e"></span>Crimson</button>
-    <button type="button" data-theme-choice="mono"><span class="swatch" style="--swatch:#fff"></span>Mono</button>
+<main class="card">
+  <header class="brand">
+    <div class="mark">S</div>
+    <h1>𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗</h1>
+    <p>WhatsApp bot · pairing code</p>
+  </header>
+
+  <label for="number">WhatsApp number</label>
+  <div class="field">
+    <span>+</span>
+    <input id="number" type="tel" inputmode="numeric" autocomplete="tel" maxlength="16" placeholder="916909950582" autofocus>
   </div>
-</aside>
+  <small class="hint">Country code ke saath, bina + ya space ke.</small>
 
+  <div class="btns">
+    <button class="primary" id="pairBtn" type="button">GET PAIR CODE</button>
+    <button class="ghost" id="forceBtn" type="button">FORCE PAIR (reset old session)</button>
+  </div>
 
-<!-- ============================================
-     🌸 ANIMATED BACKGROUND
-     ============================================ -->
-<div class="bg-canvas">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-</div>
+  <section class="result" id="result" aria-live="polite">
+    <div class="msg">Apna number daalo aur code lo.</div>
+  </section>
 
-<div class="grid-lines"></div>
+  <div class="steps">
+    <b>Kaise link karein:</b> WhatsApp → Settings → <b>Linked Devices</b> → <b>Link with phone number</b> → code enter karo.
+  </div>
 
-<div class="particles" id="particles"></div>
+  <footer class="foot">Owner <em>SOURAJIT SARKAR</em> · <em>𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗</em></footer>
+</main>
 
-<!-- ============================================
-     🌸 TOAST
-     ============================================ -->
 <div class="toast" id="toast"></div>
 
-<!-- ============================================
-     🌸 MAIN CARD
-     ============================================ -->
-<div class="card">
-
-    <!-- ─── HEADER ─── -->
-    <div class="logo-wrapper">
-        <div class="ring"></div>
-        <img class="logo-icon logo-image" src="assets-logo.png" alt="𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 logo">
-    </div>
-
-    <h1 class="rgb-text">𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗</h1>
-    <h1 class="rgb-text">PAIR CODE</h1>
-
-    <p class="status rgb-text">TYPE YOUR WHATSAPP NUMBER</p>
-
-    <!-- ─── INPUT ─── -->
-    <div class="rgb-box">
-        <input type="text" id="number" placeholder="916909950582" maxlength="15" autofocus>
-    </div>
-    <span class="hint"><i class="fas fa-info-circle"></i> Enter with country code (e.g., 923237045919)</span>
-
-    <!-- ─── BUTTONS ─── -->
-    <div class="btn-group">
-        <button class="rgb-btn" onclick="getCode()" id="pairBtn">
-            <span class="btn-inner"><i class="fas fa-link"></i> GET PAIR CODE</span>
-        </button>
-
-        <button class="force-btn" onclick="forcePair()" id="forceBtn">
-            <span class="btn-inner"><i class="fas fa-bolt"></i> FORCE PAIRING</span>
-        </button>
-
-        <button class="dc-btn" onclick="disconnectBot()" id="dcBtn">
-            <span class="btn-inner"><i class="fas fa-unlink"></i> DISCONNECT</span>
-        </button>
-    </div>
-
-    <!-- ─── RESULT ─── -->
-    <div class="result-box" id="borderBox">
-        <div class="result-inner" id="resultInner">
-            <div id="codeBox">----</div>
-            <button class="copy-btn" id="copyBtn" style="display:none;" onclick="copyCode()">
-                <i class="fas fa-copy"></i> Copy Code
-            </button>
-        </div>
-    </div>
-
-    <!-- ─── STATUS ─── -->
-    <div class="status-indicator">
-        <span class="status-dot online" id="statusDot"></span>
-        <span class="status-text" id="statusText">Server Online</span>
-    </div>
-
-    <!-- ─── BADGES ─── -->
-    <div class="badge-group">
-        <span class="badge"><i class="fas fa-robot"></i> WhatsApp Bot</span>
-        <span class="badge"><i class="fas fa-bolt"></i> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗</span>
-        <span class="badge"><i class="fas fa-crown"></i> Premium</span>
-    </div>
-
-    <!-- ─── FOOTER ─── -->
-    <div class="footer">
-        <span class="heart">♥</span> Made with <span class="heart">♥</span> by 
-        <span class="dev"><i class="fas fa-crown"></i> SOURAJIT SARKAR <i class="fas fa-crown"></i></span>
-        <div class="dev">🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI v2.0</div>
-    </div>
-
-</div>
-
-<!-- ============================================
-     🌸 JAVASCRIPT
-     ============================================ -->
 <script>
-// ============================================
-// 📱 PAIRING SYSTEM - FULLY FIXED
-// ============================================
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var numberEl = $('number'), resultEl = $('result'), pairBtn = $('pairBtn'), forceBtn = $('forceBtn');
+  var busy = false, currentCode = '';
 
-let isLoading = false;
-let currentNumber = '';
-let currentCode = '';
+  function toast(text, type) {
+    var t = $('toast');
+    t.textContent = text;
+    t.className = 'toast show ' + (type || '');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { t.className = 'toast'; }, 2600);
+  }
 
-// ─── PARTICLES ───
-function createParticles() {
-    const container = document.getElementById('particles');
-    const count = 40;
-    for (let i = 0; i < count; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.animationDuration = (15 + Math.random() * 25) + 's';
-        particle.style.animationDelay = (Math.random() * 20) + 's';
-        particle.style.width = (2 + Math.random() * 4) + 'px';
-        particle.style.height = particle.style.width;
-        container.appendChild(particle);
+  function setBusy(v) { busy = v; pairBtn.disabled = v; forceBtn.disabled = v; }
+
+  function show(kind, text) {
+    resultEl.innerHTML = '';
+    if (kind === 'loading') {
+      resultEl.className = 'result info';
+      var s = document.createElement('div'); s.className = 'spin';
+      var m = document.createElement('div'); m.className = 'msg'; m.textContent = text;
+      resultEl.appendChild(s); resultEl.appendChild(m);
+      return;
     }
-}
-createParticles();
+    resultEl.className = 'result ' + (kind || '');
+    var msg = document.createElement('div'); msg.className = 'msg'; msg.textContent = text;
+    resultEl.appendChild(msg);
+  }
 
-// ─── TOAST ───
-function showToast(message, type = 'info') {
-    const toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.className = 'toast ' + type;
-    setTimeout(() => toast.classList.add('show'), 50);
-    setTimeout(() => toast.classList.remove('show'), 4000);
-}
+  function showCode(code) {
+    currentCode = String(code);
+    var pretty = (currentCode.length === 8 && currentCode.indexOf('-') < 0)
+      ? currentCode.slice(0, 4) + '-' + currentCode.slice(4) : currentCode;
+    resultEl.className = 'result success';
+    resultEl.innerHTML = '';
+    var c = document.createElement('div'); c.className = 'code'; c.textContent = pretty;
+    var b = document.createElement('button'); b.className = 'copy'; b.type = 'button'; b.textContent = 'Copy code';
+    b.onclick = copyCode;
+    resultEl.appendChild(c); resultEl.appendChild(b);
+  }
 
-// ─── UPDATE STATUS ───
-function updateStatus(text) {
-    document.getElementById('statusText').textContent = text;
-}
+  function copyCode() {
+    var text = currentCode;
+    function done() { toast('Code copied', 'success'); }
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) { toast('Copy failed', 'error'); }
+      document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else { fallback(); }
+  }
 
-// ─── SHOW RESULT ───
-function showResult(text, type = 'info', isCode = false) {
-    const borderBox = document.getElementById('borderBox');
-    const codeBox = document.getElementById('codeBox');
-    const copyBtn = document.getElementById('copyBtn');
-    const resultInner = document.getElementById('resultInner');
+  function getNumber() {
+    var n = numberEl.value.replace(/\D/g, '');
+    if (n.length < 8 || n.length > 15) {
+      show('error', 'Valid number daalo (country code ke saath).\nExample: 916909950582');
+      numberEl.focus();
+      return null;
+    }
+    return n;
+  }
 
-    borderBox.classList.add('show');
-    codeBox.className = 'result-' + type;
-    
-    if (isCode) {
-        codeBox.style.letterSpacing = '6px';
-        codeBox.style.fontSize = '1.3rem';
-        currentCode = text;
-        copyBtn.style.display = 'block';
+  function getJSON(url, ms) {
+    var ctl = new AbortController();
+    var timer = setTimeout(function () { ctl.abort(); }, ms || 60000);
+    return fetch(url, { signal: ctl.signal, cache: 'no-store' })
+      .then(function (r) { return r.json().catch(function () { return {}; }); })
+      .then(function (d) { clearTimeout(timer); return d; },
+            function (e) { clearTimeout(timer); throw e; });
+  }
+
+  function handle(data) {
+    if (data && data.code) {
+      showCode(data.code);
+      toast('Code ready', 'success');
+      return;
+    }
+    var st = data && data.status;
+    if (st === 'already_connected') {
+      show('warning', 'Ye number already connected hai.\nNaya code chahiye to FORCE PAIR dabao.');
+    } else if (st === 'connection_in_progress') {
+      show('warning', 'Connection chal raha hai.\n10 second baad dubara try karo.');
+    } else if (st === 'reconnecting') {
+      show('warning', (data.message || 'Purane session se reconnect ho raha hai.') + '\nAgar nahi hua to FORCE PAIR use karo.');
     } else {
-        codeBox.style.letterSpacing = 'normal';
-        codeBox.style.fontSize = '1.1rem';
-        copyBtn.style.display = 'none';
+      show('error', (data && (data.message || data.error)) || 'Pairing fail hua. FORCE PAIR try karo.');
+      toast('Pairing failed', 'error');
     }
-    
-    codeBox.innerText = text;
-}
+  }
 
-// ─── COPY CODE ───
-function copyCode() {
-    if (!currentCode) return;
-    const copyBtn = document.getElementById('copyBtn');
-    navigator.clipboard.writeText(currentCode).then(() => {
-        copyBtn.innerHTML = '✅ Copied!';
-        copyBtn.classList.add('copied');
-        setTimeout(() => {
-            copyBtn.innerHTML = '<i class="fas fa-copy"></i> Copy Code';
-            copyBtn.classList.remove('copied');
-        }, 3000);
-        showToast('📋 Code copied to clipboard!', 'success');
-    }).catch(() => {
-        const textarea = document.createElement('textarea');
-        textarea.value = currentCode;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        copyBtn.innerHTML = '✅ Copied!';
-        setTimeout(() => {
-            copyBtn.innerHTML = '<i class="fas fa-copy"></i> Copy Code';
-        }, 3000);
-        showToast('📋 Code copied!', 'success');
-    });
-}
+  function run(path, num, loadingText) {
+    setBusy(true);
+    show('loading', loadingText);
+    return getJSON(path + '?number=' + num, 70000)
+      .then(handle)
+      .catch(function (e) {
+        show('error', (e && e.name === 'AbortError')
+          ? 'Server ne time par reply nahi diya. Dubara try karo.'
+          : 'Server se connect nahi ho paya.');
+        toast('Network error', 'error');
+      })
+      .then(function () { setBusy(false); });
+  }
 
-// ─── SET LOADING STATE ───
-function setLoading(loading) {
-    isLoading = loading;
-    const btns = ['pairBtn', 'forceBtn', 'dcBtn'];
-    btns.forEach(id => {
-        const btn = document.getElementById(id);
-        btn.disabled = loading;
-        btn.style.opacity = loading ? '0.5' : '1';
-    });
-}
-
-// ============================================
-// 🔗 NORMAL PAIR
-// ============================================
-async function getCode() {
-    const num = document.getElementById('number').value.replace(/[^0-9]/g, '');
-    const borderBox = document.getElementById('borderBox');
-
-    if (!num) {
-        showResult('❌ ENTER YOUR NUMBER', 'error');
-        borderBox.classList.add('show');
-        return;
-    }
-
-    if (isLoading) return;
-    setLoading(true);
-    currentNumber = num;
-
-    showResult('⏳ CONNECTING...', 'info');
-
-    try {
-        // ── Check status ──
-        const statusRes = await fetch(`/pair-status?number=${num}`);
-        const statusData = await statusRes.json();
-
-        if (statusData.status === 'connected') {
-            showResult('✅ Already Connected!\nUse FORCE PAIRING to reset', 'warning');
-            setLoading(false);
-            return;
+  function pair() {
+    if (busy) return;
+    var num = getNumber(); if (!num) return;
+    setBusy(true);
+    show('loading', 'Number check ho raha hai...');
+    getJSON('/pair-status?number=' + num, 15000)
+      .then(function (d) { return (d && d.data) || {}; }, function () { return {}; })
+      .then(function (info) {
+        setBusy(false);
+        if (info.isActive) {
+          show('warning', 'Ye number already connected hai.\nNaya code chahiye to FORCE PAIR dabao.');
+          return;
         }
+        return run('/code', num, 'Pair code ban raha hai...');
+      });
+  }
 
-        // ── Normal Pair ──
-        const res = await fetch(`/code?number=${num}`);
-        const data = await res.json();
+  function force() {
+    if (busy) return;
+    var num = getNumber(); if (!num) return;
+    if (!confirm('FORCE PAIR purana session delete karke naya code banayega.\nBot ka current session disconnect ho jayega. Continue?')) return;
+    run('/force-code', num, 'Purana session hata kar naya code ban raha hai...');
+  }
 
-        if (data.code) {
-            showResult(data.code, 'success', true);
-            showToast('✅ Code generated! Copy it now.', 'success');
-        } else if (data.status === 'already_connected') {
-            showResult('✅ Already Connected!\nUse FORCE PAIRING to reset', 'warning');
-        } else {
-            showResult(data.message || '❌ Pairing Failed. Try Force Pair', 'error');
-            showToast('❌ Pairing failed', 'error');
-        }
-    } catch (e) {
-        showResult('❌ Server Error. Try Force Pair', 'error');
-        showToast('❌ Server connection failed', 'error');
-    }
+  pairBtn.addEventListener('click', pair);
+  forceBtn.addEventListener('click', force);
+  numberEl.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); pair(); } });
+  numberEl.addEventListener('input', function () { numberEl.value = numberEl.value.replace(/\D/g, ''); });
 
-    setLoading(false);
-}
-
-// ============================================
-// ⚡ FORCE PAIR
-// ============================================
-async function forcePair() {
-    const num = document.getElementById('number').value.replace(/[^0-9]/g, '');
-
-    if (!num) {
-        showResult('❌ ENTER YOUR NUMBER FIRST', 'error');
-        return;
-    }
-
-    if (isLoading) return;
-
-    if (!confirm('⚠️ FORCE PAIRING will:\n\n1️⃣ Delete your existing session\n2️⃣ Create a new pairing code\n\nThis will disconnect your current bot session.\n\nContinue?')) {
-        return;
-    }
-
-    setLoading(true);
-    currentNumber = num;
-
-    showResult('⏳ FORCE PAIRING... Deleting old session...', 'force');
-
-    try {
-        const res = await fetch(`/force-code?number=${num}`);
-        const data = await res.json();
-
-        if (data.code) {
-            showResult(data.code, 'success', true);
-            showToast('✅ Force pairing successful! Copy code.', 'success');
-        } else {
-            showResult(data.message || '❌ Force Pairing Failed', 'error');
-            showToast('❌ Force pairing failed', 'error');
-        }
-    } catch (e) {
-        showResult('❌ Server Error. Try again.', 'error');
-        showToast('❌ Server connection failed', 'error');
-    }
-
-    setLoading(false);
-}
-
-// ============================================
-// 🔌 DISCONNECT
-// ============================================
-async function disconnectBot() {
-    const num = document.getElementById('number').value.replace(/[^0-9]/g, '');
-
-    if (!num) {
-        showResult('❌ ENTER YOUR NUMBER FIRST', 'error');
-        return;
-    }
-
-    if (isLoading) return;
-
-    if (!confirm('⚠️ DISCONNECT will:\n\n1️⃣ Disconnect your bot session\n2️⃣ Delete your session from server\n\nContinue?')) {
-        return;
-    }
-
-    setLoading(true);
-
-    showResult('⏳ DISCONNECTING...', 'info');
-
-    try {
-        const res = await fetch(`/disconnect?number=${num}`);
-        const data = await res.json();
-
-        if (data.status === 'success') {
-            showResult('✅ Disconnected Successfully!\nYou can now pair again.', 'success');
-            showToast('✅ Bot disconnected', 'success');
-        } else {
-            showResult(data.error || '❌ Disconnect Failed', 'error');
-            showToast('❌ Disconnect failed', 'error');
-        }
-    } catch (e) {
-        showResult('❌ Server Error', 'error');
-        showToast('❌ Server connection failed', 'error');
-    }
-
-    setLoading(false);
-}
-
-// ============================================
-// 🔍 CHECK SESSION ON LOAD
-// ============================================
-async function checkSession() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const number = urlParams.get('number');
-
-    if (number) {
-        document.getElementById('number').value = number;
-        setTimeout(() => getCode(), 500);
-    }
-}
-
-// ─── ENTER KEY ───
-document.getElementById('number').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-        e.preventDefault();
-        getCode();
-    }
-});
-
-// ─── CTRL+ENTER = FORCE PAIR ───
-document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-        e.preventDefault();
-        forcePair();
-    }
-});
-
-// ─── AUTO FOCUS ───
-setTimeout(() => {
-    document.getElementById('number').focus();
-}, 500);
-
-// ─── INIT ───
-checkSession();
-updateStatus('Server Online');
-
-console.log('🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 Pairing Loaded!');
-console.log('🔗 Normal Pair: Enter number + Click GET PAIR CODE');
-console.log('⚡ Force Pair: Click FORCE PAIRING or Ctrl+Enter');
-console.log('🔌 Disconnect: Click DISCONNECT');
-</script>
-
-
-<script id="sourajitvfx-theme-engine">
-(() => {
-  const themes = ['cyberpunk','matrix','synthwave','ice','crimson','mono'];
-  const body = document.body;
-  const status = document.getElementById('themeStatus');
-  const buttons = document.querySelectorAll('[data-theme-choice]');
-  const toggle = document.getElementById('themeToggle');
-  const drawer = document.getElementById('themeSwitcher');
-  const backdrop = document.getElementById('themeBackdrop');
-  const setDrawer = (open) => {
-    drawer.classList.toggle('open', open);
-    backdrop.classList.toggle('open', open);
-    toggle.setAttribute('aria-expanded', String(open));
-  };
-  const applyTheme = (theme) => {
-    if (!themes.includes(theme)) theme = 'cyberpunk';
-    body.dataset.theme = theme;
-    if (status) status.textContent = theme.toUpperCase();
-    buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.themeChoice === theme));
-    try { localStorage.setItem('sourajitvfx-theme', theme); } catch (_) {}
-  };
-  let saved = 'cyberpunk';
-  try { saved = localStorage.getItem('sourajitvfx-theme') || saved; } catch (_) {}
-  applyTheme(saved);
-  buttons.forEach(btn => btn.addEventListener('click', () => {
-    applyTheme(btn.dataset.themeChoice);
-    setDrawer(false);
-  }));
-  toggle.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
-  backdrop.addEventListener('click', () => setDrawer(false));
-  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setDrawer(false); });
+  try {
+    var q = new URLSearchParams(location.search).get('number');
+    if (q) numberEl.value = q.replace(/\D/g, '');
+  } catch (e) {}
 })();
 </script>
-
 </body>
 </html>

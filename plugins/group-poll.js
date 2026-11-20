@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - POLL COMMAND
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 📌 Converted from your friend's bot
 // ============================================

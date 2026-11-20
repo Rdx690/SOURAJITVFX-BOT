@@ -1,6 +1,6 @@
 // ============================================
-// 🕐 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - RUNTIME WITH BUTTONS
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🕐 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - RUNTIME WITH BUTTONS
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 EXACT SAME STYLE AS MENU
 // 💖 Interactive Buttons + Single Select
 // ============================================
@@ -55,7 +55,7 @@ mishu({
         const uptime = formatUptime(process.uptime());
         const memory = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2);
         const botName = config.BOT_NAME || "𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗";
-        const ownerName = config.OWNER_NAME || "ᴹᴿAʀꜱʟᴀɴ-ᴍD ";
+        const ownerName = config.OWNER_NAME || "ᴹᴿSOURAJIT SARKAR ";
         const prefix = config.PREFIX || ".";
         const pushName = pushname || 'User';
         const pakTime = moment().tz('Asia/Karachi').format('hh:mm:ss A');
@@ -87,8 +87,8 @@ mishu({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363348739987203@newsletter',
-                newsletterName: '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐',
+                newsletterJid: '120363413024337212@newsletter',
+                newsletterName: '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
                 serverMessageId: 143
             }
         };
@@ -178,7 +178,7 @@ mishu({
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '👑 🄾🅆🄽🄴🅁 ✌︎㋡',
-                        url: config.OWNER_LINK || 'https://wa.me/923237045919'
+                        url: config.OWNER_LINK || 'https://wa.me/916909950582'
                     })
                 }
             ]
@@ -210,7 +210,7 @@ mishu({
                 }, { quoted: incoming });
             } else if (selectedId === 'owner') {
                 await mishu.sendMessage(from, {
-                    text: `👑 *Owner Info*\n\n📱 Number: 923237045919\n💖 Name: ᴀʀꜱʟᴀɴ-ᴍᴅ`
+                    text: `👑 *Owner Info*\n\n📱 Number: 916909950582\n💖 Name: SOURAJIT SARKAR`
                 }, { quoted: incoming });
             } else if (selectedId === 'ping') {
                 const start = Date.now();
@@ -247,7 +247,7 @@ mishu({
 │  ✿ 📌 Prefix: ${config.PREFIX || '.'}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
             await reply(fallbackText);
         } catch (fallbackError) {
             await reply(`🕐 Error loading runtime: ${error.message} 💕`);
@@ -255,4 +255,4 @@ mishu({
     }
 });
 
-console.log('🕐 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - Runtime with Gifted Buttons Loaded! 💖');
+console.log('🕐 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - Runtime with Gifted Buttons Loaded! 💖');

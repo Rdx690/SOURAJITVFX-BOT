@@ -1,6 +1,6 @@
 // ============================================
 // 🎬 MP4MOVIEZ - TAP TO SELECT WITH INTERACTIVE BUTTONS
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 FIXED: LIST RESPONSE HANDLER
 // 💖 Search → Single Select → Details → Download
 // ============================================

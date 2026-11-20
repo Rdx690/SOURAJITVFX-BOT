@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 LYRICS - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 📌 Category: Music
 // ============================================
@@ -92,7 +92,7 @@ async (mishu, mek, m, { from, reply, text }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
@@ -106,7 +106,7 @@ async (mishu, mek, m, { from, reply, text }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
@@ -246,7 +246,7 @@ ${lyrics}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💖 Powered by 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+👑 Developer: SOURAJIT SARKAR
         `.trim();
 
         const caption = `
@@ -271,7 +271,7 @@ ${lyrics}
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }

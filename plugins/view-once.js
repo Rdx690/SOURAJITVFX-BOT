@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 VIEW ONCE PLUGIN - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 (FINAL)
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Fixed: Unsupported media type error
 // ============================================
 
@@ -170,7 +170,7 @@ async function handleViewOnce(client, mek, m, context) {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
@@ -185,7 +185,7 @@ async function handleViewOnce(client, mek, m, context) {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }

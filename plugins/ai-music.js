@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 AI MUSIC GENERATOR - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Generate AI Music from Prompt
 // ============================================
 
@@ -31,7 +31,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
 }
 
 // ============================================
@@ -135,14 +135,14 @@ mishu({
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '🎵 Play Online',
-                        url: arslanmd.xo.je
+                        url: 'https://github.com/Rdx690'
                     })
                 },
                 {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '📥 Download MP3',
-                        url: arslanmd.xo.je
+                        url: 'https://github.com/Rdx690'
                     })
                 },
                 {
@@ -334,7 +334,7 @@ mishu({
 │ ✿ .aimusiclyrics [lyrics]
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
         `;
 
         reply(styles);

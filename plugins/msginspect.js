@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 MSG INSPECT - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔍 Inspect quoted message structure
 // ============================================
 
@@ -22,7 +22,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 `;
 }
 

@@ -45,16 +45,16 @@ const AUDIO_URLS = [
 // 📌 CATEGORY IMAGES
 // ============================================
 const CATEGORY_IMAGES = {
-    menu_settings: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_group: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_islamic: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_text: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_download: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_utility: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_owner: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_extra: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_ai: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png',
-    menu_stalk: 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png'
+    menu_settings: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_group: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_islamic: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_text: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_download: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_utility: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_owner: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_extra: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_ai: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png',
+    menu_stalk: 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png'
 };
 
 // ============================================
@@ -106,7 +106,7 @@ mishu({
         const uptime = runtime(process.uptime());
         const memory = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2);
         const botName = config.BOT_NAME || "𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗";
-        const ownerName = config.OWNER_NAME || "SOURAJIT SARKAR";
+        const ownerName = config.OWNER_NAME || "ᴹᴿSOURAJIT SARKAR ";
         const prefix = config.PREFIX || ".";
         const pushName = pushname || 'User';
         const pakTime = moment().tz('Asia/Karachi').format('hh:mm:ss A');
@@ -132,7 +132,7 @@ mishu({
 ││♡⪼ 🔧 Prefix: ${prefix}
 ││♡⪼ 🌟 ${greeting}
 ╰───────────────────○
-𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
+❦Ａｒｓｌａｎ－ＭＤ－Ｍｉｎｉ
 
 💖 *ᴛᴀᴘ ᴛᴏ ᴏᴘᴇɴ ᴍᴇɴᴜ" ʙᴇʟᴏᴡ ᴛᴏ sᴇʟᴇᴄᴛ ᴀ ᴄᴀᴛᴇɢᴏʀʏ*
         `.trim();
@@ -144,7 +144,7 @@ mishu({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363413024337212@newsletter',
-                newsletterName: '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐',
+                newsletterName: '𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗',
                 serverMessageId: 143
             }
         };
@@ -167,7 +167,7 @@ mishu({
         }
 
         // ── STEP 2: Send Image + Tap to Select ────────────────
-        const imageUrl = config.MENU_IMAGE_URL || 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png';
+        const imageUrl = config.MENU_IMAGE_URL || 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png';
 
         // ── Categories ─────────────────────────────────────────
         const categories = [
@@ -262,7 +262,7 @@ mishu({
 │  ✿ 📌 Prefix: ${config.PREFIX || '.'}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
             await reply(fallbackMenu);
         } catch (fallbackError) {
             reply(`🌸 Error loading menu: ${error.message} 💕`);
@@ -298,7 +298,7 @@ mishu({
 │  ✿ .setprefix [char]
 │  ✿ .setmenupic [url/reply]
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -343,7 +343,7 @@ mishu({
 │  ✿ .antilink on/off
 │  ✿ .antitag on/kick/off
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -372,7 +372,7 @@ mishu({
 │  ✿━━━━━━━━━━━━━━━✿
 │  ✿ .asmaulhusna [1-20]
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -403,7 +403,7 @@ mishu({
 │  ✿ .1917 [text]
 │  ✿ .fancy [text]
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -450,7 +450,7 @@ mishu({
 │  ✿ .weather [city]
 │  ✿ .sticker (reply to image)
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -487,7 +487,7 @@ mishu({
 │  ✿ .calc [expression]
 │  ✿ .enc [javascript code]
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -525,7 +525,7 @@ mishu({
 │  ✿ .alwaysonline on/off
 │  ✿ .autoread on/off
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -558,7 +558,7 @@ mishu({
 │  ✿ .left (leave group)
 │  ✿ .alive2
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -593,7 +593,7 @@ mishu({
 │  ✿ .aiart [prompt]
 │  ✿ .text2img [prompt]
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {
@@ -626,7 +626,7 @@ mishu({
 │  ✿ .nowa [number]
 │  ✿ .truecaller [number]
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
     `.trim();
     
     await mishu.sendMessage(from, {

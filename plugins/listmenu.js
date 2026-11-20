@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - LIST MENU WITH QUICK REPLY
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 📌 Using Gifted-btns quick_reply buttons
 // ============================================

@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗-QUEEN-MINI ANTI-CALL
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 ANTI-CALL
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Enable/Disable auto call rejection
 // ============================================
 

@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 CHANNEL REACT - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🌸 CHANNEL REACT - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 React to WhatsApp channel posts
 // ============================================
 

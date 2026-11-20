@@ -1,6 +1,6 @@
 // ============================================
 // 📁 data/presence.js - PRESENCE CONTROL
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Auto typing, recording, online status
 // ============================================
 

@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - MOVIE DOWNLOADER (API BASED)
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 🔧 NO PUPPETEER - Uses simple API
 // ============================================
@@ -200,7 +200,7 @@ async (mishu, mek, m, { from, reply, text, pushname }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }

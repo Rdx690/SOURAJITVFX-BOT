@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 DOWNLOAD COMMANDS - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // ============================================
 
@@ -25,7 +25,7 @@ function girlBox(title, rows) {
 ${body}
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 `;
 }
 // ============================================
@@ -403,7 +403,7 @@ mishu({
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }
@@ -464,7 +464,7 @@ mishu({
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
@@ -479,7 +479,7 @@ mishu({
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
@@ -496,7 +496,7 @@ mishu({
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
+                        newsletterJid: '120363413024337212@newsletter',
                         newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                         serverMessageId: 143
                     }
@@ -566,7 +566,7 @@ mishu({
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }
@@ -588,7 +588,7 @@ mishu({
 > 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
             `.trim();
 
-            await mishu.sendMessage('120363348739987203@newsletter', {
+            await mishu.sendMessage('120363413024337212@newsletter', {
                 text: channelText,
                 contextInfo: {
                     forwardingScore: 999,
@@ -596,7 +596,7 @@ mishu({
                 }
             });
 
-            await mishu.sendMessage('120363348739987203@newsletter', {
+            await mishu.sendMessage('120363413024337212@newsletter', {
                 document: fileResponse.data,
                 mimetype: fileType || 'application/octet-stream',
                 fileName: fileName || 'mediafire_file',
@@ -658,7 +658,7 @@ mishu({
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }
@@ -684,7 +684,7 @@ mishu({
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterJid: '120363413024337212@newsletter',
                     newsletterName: '🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 🌸',
                     serverMessageId: 143
                 }

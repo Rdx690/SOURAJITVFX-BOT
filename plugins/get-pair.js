@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - PAIRING COMMAND
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - PAIRING COMMAND
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Working with your API + Image + Buttons
 // ============================================
 
@@ -9,6 +9,7 @@ const axios = require("axios");
 const { sendInteractiveMessage } = require('gifted-btns');
 const { sleep } = require('../lib/functions');
 const config = require('../config');
+const PAIR_BASE = (config.PAIR_URL || process.env.PAIR_URL || '').replace(/\/$/, '');
 
 // ── Image URL ──
 const PAIR_IMAGE = config.PAIR_IMAGE || 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png';
@@ -21,6 +22,7 @@ mishu({
     react: "🌸",
     filename: __filename
 }, async (mishu, mek, m, { from, q, senderNumber, reply, isOwner }) => {
+    if (!PAIR_BASE) return reply('⚠️ PAIR_URL is not set. Add your deployed pair site URL as the PAIR_URL environment variable.');
     try {
         let number = q
             ? q.replace(/[^0-9]/g, "")
@@ -39,11 +41,11 @@ mishu({
         let uptime = null;
 
         try {
-            const statusRes = await axios.get(`https://mishu-md-mini-v2-server1-0e639b1a9594.herokuapp.com/pair-status?number=${number}`, {
+            const statusRes = await axios.get(`${PAIR_BASE}/pair-status?number=${number}`, {
                 timeout: 10000
             });
             
-            if (statusRes.data && statusRes.data.status === 'connected') {
+            if (statusRes.data && ((statusRes.data.data && statusRes.data.data.status === 'connected') || statusRes.data.status === 'connected')) {
                 isConnected = true;
                 connectionTime = statusRes.data.connectionTime || 'Unknown';
                 uptime = statusRes.data.uptime || '0';
@@ -89,7 +91,7 @@ mishu({
                         name: 'cta_url',
                         buttonParamsJson: JSON.stringify({
                             display_text: '🔌 Disconnect',
-                            url: `https://mishu-md-mini-v2-server1-0e639b1a9594.herokuapp.com/disconnect?number=${number}`
+                            url: `${PAIR_BASE}/disconnect?number=${number}`
                         })
                     },
                     {
@@ -103,7 +105,7 @@ mishu({
                         name: 'cta_url',
                         buttonParamsJson: JSON.stringify({
                             display_text: '📊 Check Status',
-                            url: `https://mishu-md-mini-v2-server1-0e639b1a9594.herokuapp.com/status?number=${number}`
+                            url: `${PAIR_BASE}/status?number=${number}`
                         })
                     }
                 ]
@@ -181,7 +183,7 @@ mishu({
 
         try {
             // ── Your Working API ──
-            const apiUrl = `https://mishu-md-mini-v2-server1-0e639b1a9594.herokuapp.com/code?number=${number}`;
+            const apiUrl = `${PAIR_BASE}/code?number=${number}`;
             console.log(`[Pair] Calling API: ${apiUrl}`);
             
             const res = await axios.get(apiUrl, { 
@@ -244,7 +246,7 @@ mishu({
 │ ♡⪼ ✅ Ready to use!
 ╰────────────────────○
 
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
 
             try {
                 await mishu.sendMessage(from, {

@@ -362,7 +362,7 @@ mishu({
 ╰────────────────────○
 
 🌸 *To change: .<command> on/off*
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
 
     return reply(list);
 });

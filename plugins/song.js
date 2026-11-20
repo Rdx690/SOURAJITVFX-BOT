@@ -74,7 +74,7 @@ async (mishu, mek, m, { from, reply, text, pushname }) => {
 │ ♡⪼ 👁️ ${views || 'N/A'} views
 │ ♡⪼ 📥 Processing...
 ╰────────────────────○
-> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+> 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
         `;
 
         // Send ONLY the thumbnail with caption - NO buttons, NO extra messages

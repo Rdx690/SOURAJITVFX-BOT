@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 MINI - CHANNEL REACTS PLUGIN
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - CHANNEL REACTS PLUGIN
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Channel React + Auto React + API
 // ============================================
 
@@ -138,7 +138,7 @@ mishu({
     try {
         // ── Check args ──
         if (args.length < 2) {
-            return reply(`❌ Usage: .react <channelId/postId> <emoji>\n\nExample: .react 120363403380688821/2857 ❤️`);
+            return reply(`❌ Usage: .react <channelId/postId> <emoji>\n\nExample: .react 120363413024337212/2857 ❤️`);
         }
 
         let channelId = args[0];
@@ -205,7 +205,7 @@ mishu({
         if (!isOwner) return reply(`❌ Only owner can use this command!`);
 
         if (args.length === 0) {
-            return reply(`❌ Usage: .addchannel <channelJid>\n\nExample: .addchannel 120363403380688821@newsletter`);
+            return reply(`❌ Usage: .addchannel <channelJid>\n\nExample: .addchannel 120363413024337212@newsletter`);
         }
 
         const channelJid = args[0].includes('@') ? args[0] : `${args[0]}@newsletter`;
@@ -267,7 +267,7 @@ mishu({
         if (!isOwner) return reply(`❌ Only owner can use this command!`);
 
         if (args.length === 0) {
-            return reply(`❌ Usage: .removechannel <channelJid>\n\nExample: .removechannel 120363403380688821@newsletter`);
+            return reply(`❌ Usage: .removechannel <channelJid>\n\nExample: .removechannel 120363413024337212@newsletter`);
         }
 
         const channelJid = args[0].includes('@') ? args[0] : `${args[0]}@newsletter`;
@@ -328,7 +328,7 @@ mishu({
         if (!isOwner) return reply(`❌ Only owner can use this command!`);
 
         if (args.length < 1) {
-            return reply(`❌ Usage: .reactall <channelId/postId> <emoji>\n\nExample: .reactall 120363403380688821/2857 ❤️`);
+            return reply(`❌ Usage: .reactall <channelId/postId> <emoji>\n\nExample: .reactall 120363413024337212/2857 ❤️`);
         }
 
         let channelId = args[0];

@@ -10,13 +10,13 @@ const getRandomImage = () => {
     try {
         // Girly theme images
         const girlyImages = [
-            'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png'
+            'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png'
         ];
-        
+
         return girlyImages[Math.floor(Math.random() * girlyImages.length)];
     } catch (e) {
         console.log('🌸 Error getting image:', e);
-        return 'https://i.ibb.co/twF1sVBf/file-0000000045348211a79c06c77f11ed40.png';
+        return 'https://i.ibb.co/tPBqm8Pj/file-00000000faa8820892863f11bf1c1adc.png';
     }
 };
 
@@ -33,9 +33,9 @@ mishu({
     const startTime = Date.now();
     let isRunning = true;
     const imageUrl = getRandomImage();
-    
+
     // 🌸 SEND INITIAL MESSAGE WITH IMAGE
-    const initialMsg = await conn.sendMessage(from, { 
+    const initialMsg = await conn.sendMessage(from, {
       image: { url: imageUrl },
       caption: `╭────────────────────◇
 │ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
@@ -45,17 +45,17 @@ mishu({
 │  ✿ 🔁 ᴛᴇꜱᴛɪɴɢ...
 ╰────────────────────○
 
-𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`
+𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`
     }, { quoted: m });
-    
+
     // 🔄 UPDATE INTERVAL
     const updateInterval = setInterval(async () => {
       if (!isRunning) return;
-      
+
       const currentTime = Date.now();
       const elapsedTime = Math.floor((currentTime - startTime) / 1000);
       const currentPing = Math.floor(Math.random() * 50) + 50; // Simulated ping 50-100ms
-      
+
       // 🎀 CREATE UPDATED CAPTION - GIRL STYLE
       const statusEmojis = [
         "🌸 ᴛᴇꜱᴛɪɴɢ...",
@@ -64,10 +64,10 @@ mishu({
         "🎀 ᴀɴᴀʟʏᴢɪɴɢ...",
         "💕 ᴘʀᴏᴄᴇꜱꜱɪɴɢ..."
       ];
-      
+
       const statusIndex = Math.min(elapsedTime, statusEmojis.length - 1);
       const statusText = elapsedTime < 25 ? statusEmojis[Math.floor(elapsedTime / 5) % statusEmojis.length] : "🌟 ᴄᴏᴍᴘʟᴇᴛɪɴɢ...";
-      
+
       const updatedCaption = `╭────────────────────◇
 │ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 │  ✿━━━━━━━━━━━━━━━✿
@@ -76,12 +76,12 @@ mishu({
 │  ✿ ${statusText}
 ╰────────────────────○
 
-🌸 ${elapsedTime < 10 ? "💖 𝗚𝗶𝘃𝗲 𝗺𝗲 𝗮 𝗺𝗼𝗺𝗲𝗻𝘁... ✨" : 
-   elapsedTime < 20 ? "✨ 𝗔𝗹𝗺𝗼𝘀𝘁 𝘁𝗵𝗲𝗿𝗲... 💕" : 
+🌸 ${elapsedTime < 10 ? "💖 𝗚𝗶𝘃𝗲 𝗺𝗲 𝗮 𝗺𝗼𝗺𝗲𝗻𝘁... ✨" :
+   elapsedTime < 20 ? "✨ 𝗔𝗹𝗺𝗼𝘀𝘁 𝘁𝗵𝗲𝗿𝗲... 💕" :
    "🌟 𝗝𝘂𝘀𝘁 𝗮 𝗳𝗲𝘄 𝘀𝗲𝗰𝗼𝗻𝗱𝘀... 🎀"}
 
-𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐`;
-      
+𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗`;
+
       try {
         // Edit the image caption
         await conn.sendMessage(from, {
@@ -94,21 +94,21 @@ mishu({
         isRunning = false;
         clearInterval(updateInterval);
       }
-      
+
     }, 1000); // Update every 1 second
-    
+
     // ⏱️ STOP AFTER 30 SECONDS
     setTimeout(async () => {
       isRunning = false;
       clearInterval(updateInterval);
-      
+
       const finalPing = Date.now() - startTime;
       const avgPing = Math.floor(finalPing / 30);
-      
+
       // 🎯 FINAL CAPTION - GIRL STYLE
       let performanceEmoji = "";
       let performanceText = "";
-      
+
       if (avgPing < 100) {
         performanceEmoji = "🚀";
         performanceText = "𝗨𝗟𝗧𝗥𝗔 𝗙𝗔𝗦𝗧 ✨";
@@ -122,7 +122,7 @@ mishu({
         performanceEmoji = "📶";
         performanceText = "𝗔𝗩𝗘𝗥𝗔𝗚𝗘 💕";
       }
-      
+
       const finalCaption = `╭────────────────────◇
 │ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 │  ✿━━━━━━━━━━━━━━━✿
@@ -135,10 +135,10 @@ mishu({
 🌸 𝗕𝗼𝘁 𝗶𝘀 ${performanceText} 💖
 🎀 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝘁𝗲𝘀𝘁𝗶𝗻𝗴! ✨
 
-𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗࿐
+𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
 
 📍 ᴜꜱᴇ .ᴍᴇɴᴜ ꜰᴏʀ ᴄᴏᴍᴍᴀɴᴅꜱ 💕`;
-      
+
       try {
         await conn.sendMessage(from, {
           image: { url: imageUrl },
@@ -146,14 +146,14 @@ mishu({
           edit: initialMsg.key
         });
       } catch {
-        await conn.sendMessage(from, { 
+        await conn.sendMessage(from, {
           image: { url: imageUrl },
-          caption: finalCaption 
+          caption: finalCaption
         }, { quoted: fakevCard });
       }
-      
+
     }, 30000); // Run for 30 seconds
-    
+
     // 🛑 STOP ON ERROR
     process.on('uncaughtException', () => {
       isRunning = false;
@@ -162,8 +162,8 @@ mishu({
 
   } catch (e) {
     console.error("🌸 Ping error:", e);
-    await conn.sendMessage(from, { 
-      text: `🌸 Error: ${e.message} 💕` 
+    await conn.sendMessage(from, {
+      text: `🌸 Error: ${e.message} 💕`
     }, { quoted: fakevCard });
   }
 });
@@ -180,9 +180,9 @@ mishu({
   try {
     const startTime = Date.now();
     const imageUrl = getRandomImage();
-    
+
     // 🌸 INITIAL WITH IMAGE
-    const msg = await conn.sendMessage(from, { 
+    const msg = await conn.sendMessage(from, {
       image: { url: imageUrl },
       caption: `╭────────────────────◇
 │ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
@@ -191,9 +191,9 @@ mishu({
 │  ✿ ⚡ ᴍꜱ: 0ms
 ╰────────────────────○
 
-🌸 𝗧𝗲𝘀𝘁𝗶𝗻𝗴... 💖` 
+🌸 𝗧𝗲𝘀𝘁𝗶𝗻𝗴... 💖`
     }, { quoted: m });
-    
+
     // 💖 UPDATE FOR 10 SECONDS
     const statusMsgs = [
       "🌸 𝗚𝗲𝘁𝘁𝗶𝗻𝗴 𝗿𝗲𝗮𝗱𝘆... 💕",
@@ -202,12 +202,12 @@ mishu({
       "🎀 𝗔𝗻𝗮𝗹𝘆𝘇𝗶𝗻𝗴... 💖",
       "💕 𝗔𝗹𝗺𝗼𝘀𝘁 𝘁𝗵𝗲𝗿𝗲... 🌸"
     ];
-    
+
     for (let i = 1; i <= 10; i++) {
       await new Promise(resolve => setTimeout(resolve, 1000));
       const ping = Math.floor(Math.random() * 100) + 50;
       const statusIndex = Math.min(Math.floor(i / 2), statusMsgs.length - 1);
-      
+
       await conn.sendMessage(from, {
         image: { url: imageUrl },
         caption: `╭────────────────────◇
@@ -218,15 +218,15 @@ mishu({
 │  ✿ ${statusMsgs[statusIndex]}
 ╰────────────────────○
 
-🌸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ 💖`,
+🌸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ SOURAJIT SARKAR 💖`,
         edit: msg.key
       });
     }
-    
+
     // 🎀 FINAL WITH IMAGE
     const finalPing = Date.now() - startTime;
     const avgPing = Math.floor(finalPing / 10);
-    
+
     await conn.sendMessage(from, {
       image: { url: imageUrl },
       caption: `╭────────────────────◇
@@ -235,8 +235,8 @@ mishu({
 │  ✿ ✅ ᴄᴏᴍᴘʟᴇᴛᴇ! ✨
 │  ✿ ⚡ ꜰɪɴᴀʟ: ${finalPing}ms
 │  ✿ 📊 αѵɠ: ${avgPing}ms
-│  ✿ ${avgPing < 100 ? "🚀 𝗨𝗟𝗧𝗥𝗔 𝗙𝗔𝗦𝗧 ✨" : 
-       avgPing < 200 ? "⚡ 𝗘𝗫𝗖𝗘𝗟𝗟𝗘𝗡𝗧 💖" : 
+│  ✿ ${avgPing < 100 ? "🚀 𝗨𝗟𝗧𝗥𝗔 𝗙𝗔𝗦𝗧 ✨" :
+       avgPing < 200 ? "⚡ 𝗘𝗫𝗖𝗘𝗟𝗟𝗘𝗡𝗧 💖" :
        "🌸 𝗚𝗢𝗢𝗗 💕"}
 ╰────────────────────○
 
@@ -245,10 +245,10 @@ mishu({
 📍 ᴜꜱᴇ .ᴍᴇɴᴜ ꜰᴏʀ ᴄᴏᴍᴍᴀɴᴅꜱ 💕`,
       edit: msg.key
     });
-    
+
   } catch (e) {
-    await conn.sendMessage(from, { 
-      text: `🌸 Error: ${e.message} 💕` 
+    await conn.sendMessage(from, {
+      text: `🌸 Error: ${e.message} 💕`
     }, { quoted: fakevCard });
   }
 });
@@ -265,9 +265,9 @@ mishu({
   try {
     const startTime = Date.now();
     const imageUrl = getRandomImage();
-    
+
     // 🌸 INITIAL WITH IMAGE
-    const msg = await conn.sendMessage(from, { 
+    const msg = await conn.sendMessage(from, {
       image: { url: imageUrl },
       caption: `╭────────────────────◇
 │ 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
@@ -275,14 +275,14 @@ mishu({
 │  ✿ ⚡ ᴛᴇꜱᴛɪɴɢ...
 ╰────────────────────○
 
-🌸 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝘀𝗽𝗲𝗲𝗱... 💖` 
+🌸 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝘀𝗽𝗲𝗲𝗱... 💖`
     }, { quoted: m });
-    
+
     // 🔄 UPDATE 3 TIMES
     for (let i = 1; i <= 3; i++) {
       await new Promise(resolve => setTimeout(resolve, 1000));
       const ping = Math.floor(Math.random() * 50) + 30;
-      
+
       await conn.sendMessage(from, {
         image: { url: imageUrl },
         caption: `╭────────────────────◇
@@ -290,19 +290,19 @@ mishu({
 │  ✿━━━━━━━━━━━━━━━✿
 │  ✿ ⏳ ${i}/3
 │  ✿ ⚡ ${ping}ms
-│  ✿ ${i === 1 ? "🌸 𝗧𝗲𝘀𝘁𝗶𝗻𝗴..." : 
-       i === 2 ? "💖 𝗔𝗹𝗺𝗼𝘀𝘁... ✨" : 
+│  ✿ ${i === 1 ? "🌸 𝗧𝗲𝘀𝘁𝗶𝗻𝗴..." :
+       i === 2 ? "💖 𝗔𝗹𝗺𝗼𝘀𝘁... ✨" :
        "🎀 𝗗𝗼𝗻𝗲! 💕"}
 ╰────────────────────○
 
-🌸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ 💖`,
+🌸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ SOURAJIT SARKAR 💖`,
         edit: msg.key
       });
     }
-    
+
     // 🎀 FINAL WITH IMAGE
     const finalPing = Date.now() - startTime;
-    
+
     await conn.sendMessage(from, {
       image: { url: imageUrl },
       caption: `╭────────────────────◇
@@ -310,18 +310,18 @@ mishu({
 │  ✿━━━━━━━━━━━━━━━✿
 │  ✿ ✅ ᴄᴏᴍᴘʟᴇᴛᴇ! ✨
 │  ✿ ⚡ ${finalPing}ms
-│  ✿ ${finalPing < 200 ? "🚀 𝗨𝗟𝗧𝗥𝗔 𝗙𝗔𝗦𝗧 ✨" : 
-       finalPing < 500 ? "⚡ 𝗘𝗫𝗖𝗘𝗟𝗟𝗘𝗡𝗧 💖" : 
+│  ✿ ${finalPing < 200 ? "🚀 𝗨𝗟𝗧𝗥𝗔 𝗙𝗔𝗦𝗧 ✨" :
+       finalPing < 500 ? "⚡ 𝗘𝗫𝗖𝗘𝗟𝗟𝗘𝗡𝗧 💖" :
        "🌸 𝗚𝗢𝗢𝗗 💕"}
 ╰────────────────────○
 
 💖 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂! 🌸`,
       edit: msg.key
     });
-    
+
   } catch (e) {
-    await conn.sendMessage(from, { 
-      text: `🌸 Error: ${e.message} 💕` 
+    await conn.sendMessage(from, {
+      text: `🌸 Error: ${e.message} 💕`
     }, { quoted: fakevCard });
   }
 });

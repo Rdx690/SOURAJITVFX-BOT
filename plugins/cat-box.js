@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 CATBOX UPLOADER - 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 🔥 Upload media to Catbox.moe
 // ============================================
 

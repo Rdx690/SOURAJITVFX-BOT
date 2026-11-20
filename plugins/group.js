@@ -1,6 +1,6 @@
 // ============================================
 // 🌸 𝐒ꭷᴜʀᴀᴊɪᴛ メ 𝐕𝐅𝐗 - GROUP COMMANDS (FIXED)
-// 👑 Developer: ᴀʀꜱʟᴀɴ-ᴍᴅ
+// 👑 Developer: SOURAJIT SARKAR
 // 💖 Girl Power Mode: ON
 // 🔧 FIXED: Bot self-kick prevention
 // ============================================
@@ -89,7 +89,7 @@ mishu({
     });
 
     // 🔧 FIX: Also filter out owner's JID if trying to remove owner
-    const ownerNumber = config.OWNER_NUMBER || '923237045919';
+    const ownerNumber = config.OWNER_NUMBER || '916909950582';
     users = users.filter(user => {
         const userNumber = user.split('@')[0];
         return userNumber !== ownerNumber;
